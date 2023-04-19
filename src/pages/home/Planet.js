@@ -12,7 +12,7 @@ const Planet = ({ textureUrl, rotationSpeed }) => {
 
   return (
     <mesh ref={planetRef}>
-      <sphereGeometry args={[4, 32, 32]} />
+      <sphereGeometry args={[3, 32, 32]} />
       <meshPhongMaterial map={texture} />
     </mesh>
   );

@@ -5,13 +5,22 @@ export const isProduction = process.env.NODE_ENV === "production";
 
 export const DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
+export function calculateOrthographicCameraSize(canvas, fixedSizePixels) {
+  const { width, height } = canvas;
+  const aspect = width / height;
+  const size = (fixedSizePixels / height) * 2;
+  return {
+    left: (-aspect * size) / 2,
+    right: (aspect * size) / 2,
+    top: size / 2,
+    bottom: -size / 2,
+    size,
+  };
+}
+
 export const SUPPORTED_IMAGE_FORMATS = ["image/jpg", "image/jpeg", "image/png"];
 
 export const map2select = ([value, label]) => ({ label, value });
-
-export function pluralize(word, count) {
-  return `${word}${count === 1 ? "" : "s"}`;
-}
 
 export function dateFormatter({ value }) {
   if (value && new Date(value)) {

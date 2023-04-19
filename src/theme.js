@@ -29,6 +29,10 @@ const theme = createTheme({
   typography: Typography,
   palette: {
     mode: "dark",
+    background: {
+      paper: "#111",
+      default: "#111",
+    },
     primary: {
       main: "#E5453A",
     },

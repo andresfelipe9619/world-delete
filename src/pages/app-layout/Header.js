@@ -14,24 +14,45 @@ import { Menu, MenuItem } from "@mui/material";
 
 export default function Header(props) {
   const [anchorEl, setAnchorEl] = useState(null);
+  const [openDrawer, setOpenDrawer] = useState(false);
   const navigate = useNavigate();
   const go2 = (path) => () => navigate(path);
 
-  const handleMenu = (event) => {
+  const handleOpenTranslation = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
+  const handleOpenDrawer = () => {
+    setOpenDrawer(null);
+  };
+
+  const handleCloseTranslation = () => {
     setAnchorEl(null);
   };
+
   return (
     <>
       <HideOnScroll {...props}>
-        <AppBar position="static">
+        <AppBar
+          elevation={0}
+          position="static"
+          sx={{ background: (theme) => theme.palette.background.paper }}
+        >
           <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
               World Delete
             </Typography>
+
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              How it works
+            </Typography>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              FAQ
+            </Typography>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              Introduction
+            </Typography>
+
             <div>
               <IconButton
                 size="large"
@@ -47,7 +68,7 @@ export default function Header(props) {
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
-                onClick={handleMenu}
+                onClick={handleOpenTranslation}
                 color="inherit"
               >
                 <TranslateIcon />
@@ -65,16 +86,17 @@ export default function Header(props) {
                   horizontal: "right",
                 }}
                 open={Boolean(anchorEl)}
-                onClose={handleClose}
+                onClose={handleCloseTranslation}
               >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
+                <MenuItem onClick={handleCloseTranslation}>English</MenuItem>
+                <MenuItem onClick={handleCloseTranslation}>Español</MenuItem>
               </Menu>
               <IconButton
                 size="large"
                 edge="start"
                 color="inherit"
                 aria-label="menu"
+                onClick={handleOpenDrawer}
                 sx={{ mr: 2 }}
               >
                 <MenuIcon />
