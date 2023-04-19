@@ -3,6 +3,7 @@ import AppLayout from "./pages/app-layout/AppLayout";
 import ErrorPage from "./pages/error/ErrorPage";
 import HomePage from "./pages/home/HomePage";
 import ProfilePage from "./pages/auth/Profile";
+import GoogleInformationPage from "./pages/googleInformation/GoogleInformationPage";
 
 const router = () =>
   createBrowserRouter([
@@ -18,6 +19,10 @@ const router = () =>
           path: "/profile",
           element: <ProfilePage />,
         },
+        {
+          path: "/google_information",
+          element: <GoogleInformationPage />,
+        }
       ],
     },
   ]);

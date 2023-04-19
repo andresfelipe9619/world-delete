@@ -6,13 +6,14 @@ import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box"; // Reemplaza con la ruta a la textura del planeta
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
-import ContactForm from "../../components/form/ContactForm";
-import textureUrl from "../../assets/texture.jpg";
+// import textureUrl from "../../assets/texture.jpg";
 import barsUrl from "../../assets/bars.png";
 import dashboardUrl from "../../assets/dashboard.png";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import Carousel from "../../components/carousel/Carousel";
+import FormTriangle from "./FormTriangle.js";
 const rotationSpeed = 0.001; // Ajusta la velocidad de rotación
+
 
 export default function HomePage(props) {
   return (
@@ -43,7 +44,7 @@ export default function HomePage(props) {
           <Canvas style={{ position: "relative" }}>
             <ambientLight />
             <pointLight position={[10, 10, 10]} />
-            <Planet textureUrl={textureUrl} rotationSpeed={rotationSpeed} />
+            {/* <Planet textureUrl={textureUrl} rotationSpeed={rotationSpeed} /> */}
           </Canvas>
         </Box>
 
@@ -107,31 +108,7 @@ export default function HomePage(props) {
           </Grid>
         </Grid>
       </Grid>
-      <Grid
-        item
-        md={12}
-        container
-        className="background-triangle"
-        sx={{ mr: 0, ml: -2, mt: -1 }}
-      >
-        <Grid item md={8} container direction={"column"} sx={{ pl: 3, pt: 3 }}>
-          <Typography variant={"h1"} component={"h2"} sx={{ maxWidth: "40%" }}>
-            Deleting detrimental content de from any platform on the Internet
-          </Typography>
-          <Typography sx={{ my: 4 }}>+ 1 (918) 309 2025</Typography>
-          <Typography>info@world-delete.com</Typography>
-          <Button
-            variant={"outlined"}
-            sx={{ width: 180, my: 4 }}
-            endIcon={<KeyboardArrowRightIcon />}
-          >
-            Contact us
-          </Button>
-        </Grid>
-        <Grid item md={4} sx={{ pr: 2 }}>
-          <ContactForm />
-        </Grid>
-      </Grid>
+      <FormTriangle />
     </Grid>
   );
 }
