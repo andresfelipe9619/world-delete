@@ -6,7 +6,7 @@ import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box"; // Reemplaza con la ruta a la textura del planeta
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
-// import textureUrl from "../../assets/texture.jpg";
+import textureUrl from "../../assets/texture.jpg";
 import barsUrl from "../../assets/bars.png";
 import dashboardUrl from "../../assets/dashboard.png";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
@@ -44,7 +44,7 @@ export default function HomePage(props) {
           <Canvas style={{ position: "relative" }}>
             <ambientLight />
             <pointLight position={[10, 10, 10]} />
-            {/* <Planet textureUrl={textureUrl} rotationSpeed={rotationSpeed} /> */}
+            <Planet textureUrl={textureUrl} rotationSpeed={rotationSpeed} />
           </Canvas>
         </Box>
 
