@@ -3,6 +3,11 @@ import React from "react";
 import FormTriangle from '../home/FormTriangle';
 import { Grid, Typography, Button } from "@mui/material";
 import bannerGoolge from '../../assets/googleInformation/bannerGoogleInformation.png';
+import socialNetwork from '../../assets/googleInformation/socialNetwork.png';
+import blogsForums from '../../assets/googleInformation/blogsForums.png';
+import digitalMedia from '../../assets/googleInformation/digitalMedia.png';
+import videosPhotografias from '../../assets/googleInformation/videosPhotografias.png';
+import mentionsComments from '../../assets/googleInformation/mentionsComments.png';
 
 const styled = {
      containerDiv: {
@@ -103,57 +108,75 @@ const styled = {
  * @returns {JSX.Element} GoogleInformationPage
  */
 export default function GoogleInformationPage(props) {
+  console.log(props);
 
   React.useEffect(() => {
     addClassHeader();
   }, []);
+
+  const json_data = {
+      '1': {
+        'img': bannerGoolge
+      },
+      '2': {
+        'img': socialNetwork
+      },
+      '3': {
+        'img': blogsForums
+      },
+      '4': {
+        'img': digitalMedia
+      },
+      '5': {
+        'img': videosPhotografias
+      },
+      '6': {
+        'img': mentionsComments
+      }
+  }
   
   return (
     <>
       <Grid container sx={styled.containerDiv}>
           <Grid item xs={12}>
-            <img src={bannerGoolge} alt="banner" />    
+            <img src={json_data[props.type]['img']} alt="banner" />    
             <Grid item xs={12}>
               <Grid item xs={12} >
                 <Typography sx={styled.titleStyle}>
-                      Erasing Google information
+                      {props.content['title']}
                 </Typography>
                 <ol className="ol_style_container">
-                    <li>
-                        <Typography sx={styled.textNormal}>
-                            We erase any type of prejuducial information that could
-                        </Typography>
-                    </li>
-                    <li>
-                        <Typography sx={styled.textNormal}>
-                            appear in the search engine and that affect your
-                        </Typography>
-                    </li>
-                    <li>
+                    
                         <Typography sx={styled.textNormal}>
                             reputation. ¡100% guarantee!
                         </Typography>
-                    </li>
+                    {
+                      props.content['text_1'].map((item, index) => {
+                        return (
+                          <li key={index}>
+                            <Typography sx={styled.textNormal}>
+                              {item}
+                            </Typography>
+                          </li>
+                        )
+                      })
+                    }
                 </ol>
               </Grid>
               <Grid className="item_text_long" item xs={12} >
 
                 <ol className="ol_style_container item">
-                    <li>
-                        <Typography sx={styled.textNormal}>
-                          Negative information in Internet is every day easier to detect, everyone who can access 
-                          the Internet could make a research in Google typing your Name and Surname 
-                          or your company data and easly obtain every kind of information without 
-                          any filter or limit.
-                        </Typography>
-                    </li>
-                    <li>
-                        <Typography sx={styled.textNormal}>
-                        The majority of the users do not distinguishbetween fake news or false content generated 
-                        for anonymous users with the aim of prejudicate your digital reputation or yout company credibility. 
-                        That’s why World Delete developed know-how that permit us to guarantee our job.
-                        </Typography>
-                    </li>
+                     {
+                        props.content['text_2'].map((item, index) => {
+                          return (
+                            <li key={index}>
+                              <Typography sx={styled.textNormal}>
+                                {item}
+                              </Typography>
+                            </li>
+                          )
+                        })
+                     }
                 </ol>
               </Grid>
             </Grid> 

@@ -38,6 +38,10 @@ ol {
   margin-block-start: 0;
 }
 
+.ol_style_container.item > li{
+  margin-bottom: 1em;
+}
+
 
 /*
   Variables De Colores
