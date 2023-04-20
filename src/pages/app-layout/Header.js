@@ -105,7 +105,7 @@ export default function Header(props) {
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-      <Toolbar />
+      <Toolbar id="_height_header_" />
     </>
   );
 }
@@ -120,7 +120,7 @@ function HideOnScroll(props) {
   });
 
   return (
-    <Slide appear={false} direction="down" in={!trigger}>
+    <Slide id="header_component" appear={false} direction="down" in={!trigger}>
       {children}
     </Slide>
   );

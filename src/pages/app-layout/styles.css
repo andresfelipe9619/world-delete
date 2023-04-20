@@ -14,3 +14,38 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+body header.header__google_information {
+  position: absolute;
+  background: transparent;
+  z-index: 99;
+}
+
+body ._height_header_ {
+  min-height: 0;
+}
+
+ol {
+  list-style-type: none;
+}
+
+.ol_style_container {
+  padding-inline-start: 0px;
+}
+
+.ol_style_container.item {
+  margin-block-start: 0;
+}
+
+
+/*
+  Variables De Colores
+*/
+
+:root {
+  --color-gray: #D0CFD7;
+  --color-gray-light:#F1F1F4;
+  --color-white-normal: #FFFFFF;
+}
+
