@@ -100,9 +100,9 @@ const images_content = require.context('../../assets/googleInformation', true);
 
 /**
  * @author: <cristian.machado@correounivalle.edu.co>
- * @returns {JSX.Element} GoogleInformationPage
+ * @returns {JSX.Element} BannerText
  */
-export default function GoogleInformationPage(props) {
+export default function BannerText(props) {
   console.log(props);
 
   React.useEffect(() => {
