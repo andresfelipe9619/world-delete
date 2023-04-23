@@ -14,7 +14,6 @@ import Carousel from "../../components/carousel/Carousel";
 import FormTriangle from "./FormTriangle.js";
 const rotationSpeed = 0.001; // Ajusta la velocidad de rotación
 
-
 export default function HomePage(props) {
   return (
     <Grid container sx={{ p: 3 }}>

@@ -26,6 +26,7 @@ export const Routes = {
   "Deleting data": [
     {
       path: "/google_information",
+
       element: <GoogleInformationPage type={1} 
                                       url="bannerGoogleInformation.png"
                                       content={json_data_pages['google_information']} 
