@@ -9,7 +9,15 @@
         "text_2": [
           "Negative information in Internet is every day easier to detect, everyone who can access the Internet could make a research in Google typing your Name and Surname or your company data and easly obtain every kind of information without any filter or limit.",
           "The majority of the users do not distinguishbetween fake news or false content generated for anonymous users with the aim of prejudicate your digital reputation or yout company credibility. That’s why World Delete developed know-how that permit us to guarantee our job."
-        ]
+        ],
+        "class_1": "",
+        "class_2": "",
+        "class_3": "",
+        "class_4": "",
+        "class_5": "",
+        "class_6": "",
+        "box_primary": "",
+        "box_secondary": ""
     },
     "social_networks": {
         "title": "Content on social networks",
@@ -22,7 +30,15 @@
           "Has anyone created a profile that defames you or your brand? Do you urgently need to remove all traces of the same?",
           "If you answered YES to either of these questions then you need us to take care of it. These situations are becoming increasingly common in this age of exponential growth of social networks.",
           "The Internet is becoming more and more dynamic. Content is generated every second, even creating discrepancies as to which content should be active at any one time. "
-        ]
+        ],
+        "class_1": "",
+        "class_2": "",
+        "class_3": "",
+        "class_4": "",
+        "class_5": "",
+        "class_6": "",
+        "box_primary": "",
+        "box_secondary": ""
     },
     "blogs_forums": {
         "title": "Erasing a post in forums or on blogs",
@@ -31,7 +47,15 @@
           "We can achieve 100% effective elimination of any publication on forums and blogs.",
           "The offending content will disappear within a maximum of 24 hours."
         ],
-        "text_2": ["   ", " ", " "]
+        "text_2": ["   ", " ", " "],
+        "class_1": "",
+        "class_2": "",
+        "class_3": "",
+        "class_4": "",
+        "class_5": "",
+        "class_6": "",
+        "box_primary": "_box_blogs_forums",
+        "box_secondary": ""
     },
     "digital_media": {
         "title": "Digital media",
@@ -43,7 +67,15 @@
           "Unfortunately, there are more and more digital media on the Internet every day and the information they share is often provided by news distribution agencies or by automated content aggregating systems. This means that the notices are not filtered by a human monitor to check whether said information is true and accurate or not.",
           "We believe in free speech as a fundamental principle and respect people’s right to express their opinions. Our Code of Ethics is clear and concise on the question of management or removal of content on digital media. Consequently, we examine all requests for deletion from all our potential customers individually, and will not accept an order that would be inconsistent with our internal protocols. ",
           "In this case, the World Delete team will act to ensure total, guaranteed deletion of the offending material. We will take your case seriously and erase your trail with all the means at our disposal."
-        ]
+        ],
+        "class_1": "",
+        "class_2": "",
+        "class_3": "",
+        "class_4": "",
+        "class_5": "",
+        "class_6": "",
+        "box_primary": "",
+        "box_secondary": "_box_secondary_digital_media"
     },
     "video_photography": {
         "title": "Erasing videos and photos",
@@ -56,7 +88,15 @@
           "Social networks and Internet search engines are having a greater impact our lives with every passing day. They enable us to share, send or comment on any video or photograph that turns up on our news feeds in a matter of seconds. ",
           "We are also aware that this facility, under certain circumstances, can ruin your image on the Internet and make it difficult or impossible for you to find a job or keep the one you have and even damage the reputation of your company and brand, thus creating an unexpected reputational crisis. ",
           "There are hundreds of social networks: it is almost impossible to make an updated list of them since new social communication platforms are created every day. Nevertheless, our technical team knows and controls the technical tools required to erase all content from all platforms regardless of the language in which it is written or the country of origin."
-        ]
+        ],
+        "class_1": "",
+        "class_2": "",
+        "class_3": "",
+        "class_4": "",
+        "class_5": "",
+        "class_6": "",
+        "box_primary": "",
+        "box_secondary": "_box_secondary_digital_media"
     },
     "mentions_comments": {
         "title": "Mentions and comments",
@@ -69,6 +109,14 @@
         "text_2": [
           "Users trust Google because it provides us with accurate information in response to any search term. We know that any comment, regardless of whether it is favourable or antagonistic, can tip the balance to one side or the other. ",
           "World Delete provides the ability to delete all types of Google reviews and comments."
-        ]
+        ],
+        "class_1": "",
+        "class_2": "",
+        "class_3": "",
+        "class_4": "",
+        "class_5": "",
+        "class_6": "",
+        "box_primary": "",
+        "box_secondary": ""
     }
 }

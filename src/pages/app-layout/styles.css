@@ -42,6 +42,45 @@ ol {
   margin-bottom: 1em;
 }
 
+div.MuiGrid-root._box_blogs_forums {
+  margin-left: 4.5em;
+}
+
+div.MuiGrid-root._box_blogs_forums > ol > li{
+   margin-bottom: 1em;
+}
+
+div.MuiGrid-root._box_blogs_forums > p {
+   margin-bottom: 1.3em;
+}
+
+div.MuiGrid-root._box_secondary_digital_media {
+  margin-top: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  
+  div.MuiGrid-root._box_blogs_forums {
+    margin-left: unset;
+  }
+
+  div.MuiGrid-root._box_blogs_forums > p,
+  div.MuiGrid-root._box_blogs_forums > ol > li {
+    margin-bottom: unset;
+
+ }
+
+ div.MuiGrid-root._box_secondary_digital_media,
+ div.MuiGrid-root._box_blogs_forums > ol > li > p {
+    color: var(--color-gray);
+ }
+ 
+ div.MuiGrid-root._box_blogs_forums > ol > li:last-child,
+ div.MuiGrid-root._box_blogs_forums > ol > li:first-child {
+    display: none;
+ }
+  
+}
 
 /*
   Variables De Colores

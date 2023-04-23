@@ -111,20 +111,20 @@ export default function BannerText(props) {
   
   return (
     <>
-      <Grid container sx={styled.containerDiv}>
+      <Grid container sx={styled.containerDiv} className={`${props.content['class_1']}`}>
           <Grid item xs={12}>
             <img src={images_content(`./${props.url}`)} alt="banner" />    
             <Grid item xs={12}>
-              <Grid item xs={12} >
-                <Typography sx={styled.titleStyle}>
+              <Grid item xs={12} className={`${props.content['box_primary']}`}>
+                <Typography sx={styled.titleStyle} className={`${props.content['class_2']}`}>
                       {props.content['title']}
                 </Typography>
-                <ol className="ol_style_container">
+                <ol className={`ol_style_container ${props.content['class_3']}`}>
                     {
                       props.content['text_1'].map((item, index) => {
                         return (
                           <li key={index}>
-                            <Typography sx={styled.textNormal}>
+                            <Typography sx={styled.textNormal} className={`${props.content['class_4']}`}>
                               {item}
                             </Typography>
                           </li>
@@ -133,13 +133,13 @@ export default function BannerText(props) {
                     }
                 </ol>
               </Grid>
-              <Grid className="item_text_long" item xs={12} >
-                <ol className="ol_style_container item">
+              <Grid className={`item_text_long ${props.content['box_secondary']}`} item xs={12} >
+                <ol className={`ol_style_container item ${props.content['class_5']}`}>
                      {
                         props.content['text_2'].map((item, index) => {
                           return (
                             <li key={index}>
-                              <Typography sx={styled.textNormal}>
+                              <Typography sx={styled.textNormal} className={`${props.content['class_6']}`}>
                                 {item}
                               </Typography>
                             </li>
