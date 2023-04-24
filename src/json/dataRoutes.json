@@ -17,7 +17,8 @@
         "class_5": "",
         "class_6": "",
         "box_primary": "",
-        "box_secondary": ""
+        "box_secondary": "",
+        "triangule_visibled": true
     },
     "social_networks": {
         "title": "Content on social networks",
@@ -38,7 +39,8 @@
         "class_5": "",
         "class_6": "",
         "box_primary": "",
-        "box_secondary": ""
+        "box_secondary": "",
+        "triangule_visibled": true
     },
     "blogs_forums": {
         "title": "Erasing a post in forums or on blogs",
@@ -55,7 +57,8 @@
         "class_5": "",
         "class_6": "",
         "box_primary": "_box_blogs_forums",
-        "box_secondary": ""
+        "box_secondary": "",
+        "triangule_visibled": true
     },
     "digital_media": {
         "title": "Digital media",
@@ -75,7 +78,8 @@
         "class_5": "",
         "class_6": "",
         "box_primary": "",
-        "box_secondary": "_box_secondary_digital_media"
+        "box_secondary": "_box_secondary_digital_media",
+        "triangule_visibled": true
     },
     "video_photography": {
         "title": "Erasing videos and photos",
@@ -96,7 +100,8 @@
         "class_5": "",
         "class_6": "",
         "box_primary": "",
-        "box_secondary": "_box_secondary_digital_media"
+        "box_secondary": "_box_secondary_digital_media",
+        "triangule_visibled": true
     },
     "mentions_comments": {
         "title": "Mentions and comments",
@@ -117,6 +122,46 @@
         "class_5": "",
         "class_6": "",
         "box_primary": "",
-        "box_secondary": "_box_secondary_mentions_comments"
+        "box_secondary": "_box_secondary_mentions_comments",
+        "triangule_visibled": true
+    },
+    "about_first": {
+        "title": "World Delete is provided with<br>more than 10 years of experience",
+        "text_1": [
+          ""
+        ],
+        "text_2": [
+          "There are no experiments or failed attempts here at World Delete.We get it right the first time and therefore we can apply a money-back guarantee. – all our customers get the results they need or a full refund of the price."
+        ],
+        "class_1": "",
+        "class_2": "",
+        "class_3": "",
+        "class_4": "",
+        "class_5": "",
+        "class_6": "",
+        "box_primary": "_box_secondary_digital_media",
+        "box_secondary": "_box_secondary_digital_media",
+        "triangule_visibled": false
+    },
+    "about_second": {
+        "title": "World Delete has increased<br>more than 200% per year",
+        "text_1": [
+          "World Delete has increased its customer portfolio by more than",
+          "200% per annum in recent years due to the ease with which users",
+          "can publish anonymous, unfavourable comments on the Internet.",
+          ""
+        ],
+        "text_2": [
+          ""
+        ],
+        "class_1": "_quit_before_img",
+        "class_2": "_title_about_second",
+        "class_3": "",
+        "class_4": "_style_items_about_second",
+        "class_5": "",
+        "class_6": "",
+        "box_primary": "_box_secondary_digital_media",
+        "box_secondary": "_box_secondary_digital_media",
+        "triangule_visibled": false
     }
 }

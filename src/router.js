@@ -4,6 +4,7 @@ import ErrorPage from "./pages/error/ErrorPage";
 import HomePage from "./pages/home/HomePage";
 import BannerText from "./pages/googleInformation/BannerText";
 import json_data_pages from "./json/dataRoutes.json";
+import AboutUs from "./pages/our_company/AboutUs";
 
 export const Routes = {
   "Our company": [
@@ -15,7 +16,7 @@ export const Routes = {
     {
       path: "/about-us",
       label: "About us",
-      element: <HomePage />,
+      element: <AboutUs json={json_data_pages} />,
     },
     {
       path: "/join-team",

@@ -103,11 +103,19 @@ const images_content = require.context('../../assets/googleInformation', true);
  * @returns {JSX.Element} BannerText
  */
 export default function BannerText(props) {
-  console.log(props);
+  console.log(props,props.triangule_visibled);
+
+  const htmlRef = React.useRef(null);
 
   React.useEffect(() => {
     addClassHeader();
-  }, []);
+  }, [])
+
+  React.useEffect(() => {
+    if (htmlRef.current) {
+      htmlRef.current.innerHTML = props.content['title'];
+    }
+  }, [props.content['title']]);
   
   return (
     <>
@@ -116,9 +124,9 @@ export default function BannerText(props) {
             <img src={images_content(`./${props.url}`)} alt="banner" />    
             <Grid item xs={12}>
               <Grid item xs={12} className={`${props.content['box_primary']}`}>
-                <Typography sx={styled.titleStyle} className={`${props.content['class_2']}`}>
-                      {props.content['title']}
-                </Typography>
+                <Typography sx={styled.titleStyle} 
+                            className={`${props.content['class_2']}`}
+                            ref={htmlRef} />
                 <ol className={`ol_style_container ${props.content['class_3']}`}>
                     {
                       props.content['text_1'].map((item, index) => {
@@ -151,7 +159,7 @@ export default function BannerText(props) {
             </Grid> 
           </Grid>
       </Grid>
-      <FormTriangle />
+      { props.content['triangule_visibled'] && <FormTriangle /> }
     </>
   );
 }
