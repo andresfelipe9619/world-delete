@@ -58,6 +58,11 @@ div.MuiGrid-root._box_secondary_digital_media {
   margin-top: 20%;
 }
 
+div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
+  margin-top: 2.5em;
+  margin-left: 2.1em;
+}
+
 @media screen and (max-width: 768px) {
   
   div.MuiGrid-root._box_blogs_forums {
