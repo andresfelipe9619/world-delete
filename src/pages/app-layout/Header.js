@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-// import { useNavigate } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Slide from "@mui/material/Slide";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import TranslateIcon from "@mui/icons-material/Translate";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
+import { Link as RouterLink } from "react-router-dom";
 import "./styles.css";
 import MenuDrawer from "./Menu";
+import { Link } from "@mui/material";
 
 export default function Header(props) {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -37,20 +37,38 @@ export default function Header(props) {
           sx={{ background: (theme) => theme.palette.background.paper }}
         >
           <Toolbar>
-            <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+            <Link
+              component={RouterLink}
+              to="/"
+              underline="none"
+              sx={{ flexGrow: 1, color: "white" }}
+            >
               World Delete
-            </Typography>
-
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            </Link>
+            <Link
+              component={RouterLink}
+              to="/how-it-work"
+              underline="none"
+              sx={{ flexGrow: 1, color: "white" }}
+            >
               How it works
-            </Typography>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            </Link>
+            <Link
+              component={RouterLink}
+              to="/faq"
+              underline="none"
+              sx={{ flexGrow: 1, color: "white" }}
+            >
               FAQ
-            </Typography>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            </Link>
+            <Link
+              component={RouterLink}
+              to="/introduction"
+              underline="none"
+              sx={{ flexGrow: 1, color: "white" }}
+            >
               Introduction
-            </Typography>
-
+            </Link>
             <div>
               <IconButton
                 size="large"

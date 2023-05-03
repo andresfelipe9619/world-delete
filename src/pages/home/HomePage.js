@@ -10,7 +10,7 @@ import textureUrl from "../../assets/texture.jpg";
 import barsUrl from "../../assets/bars.png";
 import dashboardUrl from "../../assets/dashboard.png";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import Carousel from "../../components/carousel/Carousel";
+// import Carousel from "../../components/carousel/Carousel";
 import FormTriangle from "./FormTriangle.js";
 const rotationSpeed = 0.001; // Ajusta la velocidad de rotación
 
