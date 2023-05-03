@@ -67,22 +67,22 @@ const styled = {
   },
   titleStyle: {
     fontStyle: "normal",
-    fontweight: "500",
+    fontWeight: "500",
     fontSize: "24px",
     color: "var( --color-gray-light)",
     "@media (max-width: 768px)": {
       color: "var(--color-white-normal)",
-      fontweight: "400",
+      fontWeight: "400",
     },
   },
   textNormal: {
     fontStyle: "normal",
-    fontweight: "500",
+    fontWeight: "500",
     fontSize: "16px",
     color: "var(--color-gray)",
     "@media (max-width: 768px)": {
       color: "var(--color-white-normal)",
-      fontweight: "400",
+      fontWeight: "400",
     },
   },
   olConatainer: {
