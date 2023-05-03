@@ -111,5 +111,6 @@ div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
   --color-title-blue: #444858;
   --color_black: #000000;
   --color-black-semit-lite: #1A1A1F;
+  --color-black-background: #060505;
 }
 
