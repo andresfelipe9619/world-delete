@@ -29,7 +29,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "lint": "eslint --fix .",
+    "precommit": "lint-staged",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,6 +41,12 @@
       "react-app",
       "react-app/jest",
       "plugin:prettier/recommended"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
     ]
   },
   "browserslist": {
@@ -54,8 +62,10 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
     "prettier": "^2.8.7"
   }
 }

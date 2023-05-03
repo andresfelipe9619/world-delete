@@ -28,46 +28,64 @@ export const Routes = {
     {
       path: "/google_information",
 
-      element: <BannerText type={1} 
-                                      url="bannerGoogleInformation.png"
-                                      content={json_data_pages['google_information']} 
-      />,
+      element: (
+        <BannerText
+          type={1}
+          url="bannerGoogleInformation.png"
+          content={json_data_pages["google_information"]}
+        />
+      ),
     },
     {
       path: "/social_networks",
-      element: <BannerText type={2} 
-                                      url="socialNetwork.png"
-                                      content={json_data_pages['social_networks']}
-      />,
+      element: (
+        <BannerText
+          type={2}
+          url="socialNetwork.png"
+          content={json_data_pages["social_networks"]}
+        />
+      ),
     },
     {
       path: "/blogs_forums",
-      element: <BannerText type={3} 
-                                      url="blogsForums.png"
-                                      content={json_data_pages['blogs_forums']}
-      />,
+      element: (
+        <BannerText
+          type={3}
+          url="blogsForums.png"
+          content={json_data_pages["blogs_forums"]}
+        />
+      ),
     },
     {
       path: "/digital_media",
-      element: <BannerText type={4} 
-                                      url="digitalMedia.png"
-                                      content={json_data_pages['digital_media']}
-      />,
+      element: (
+        <BannerText
+          type={4}
+          url="digitalMedia.png"
+          content={json_data_pages["digital_media"]}
+        />
+      ),
     },
     {
       path: "/video_photography",
-      element: <BannerText type={5} 
-                                      url="videosPhotografias.png"
-                                      content={json_data_pages['video_photography']}
-      />,
+      element: (
+        <BannerText
+          type={5}
+          url="videosPhotografias.png"
+          content={json_data_pages["video_photography"]}
+        />
+      ),
     },
     {
       path: "/mentions_comments",
-      element: <BannerText type={6} 
-                                      url="mentionsComments.png"
-                                      content={json_data_pages['mentions_comments']}
-      />,
-    }
+      element: (
+        <BannerText
+          type={6}
+          url="mentionsComments.png"
+          content={json_data_pages["mentions_comments"]}
+        />
+      ),
+    },
   ],
   "Financial data": [
     {
