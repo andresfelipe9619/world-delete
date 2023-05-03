@@ -18,7 +18,7 @@
         "class_6": "",
         "box_primary": "",
         "box_secondary": "",
-        "triangule_visibled": true
+        "triangleVisible": true
     },
     "social_networks": {
         "title": "Content on social networks",
@@ -40,7 +40,7 @@
         "class_6": "",
         "box_primary": "",
         "box_secondary": "",
-        "triangule_visibled": true
+        "triangleVisible": true
     },
     "blogs_forums": {
         "title": "Erasing a post in forums or on blogs",
@@ -58,7 +58,7 @@
         "class_6": "",
         "box_primary": "_box_blogs_forums",
         "box_secondary": "",
-        "triangule_visibled": true
+        "triangleVisible": true
     },
     "digital_media": {
         "title": "Digital media",
@@ -79,7 +79,7 @@
         "class_6": "",
         "box_primary": "",
         "box_secondary": "_box_secondary_digital_media",
-        "triangule_visibled": true
+        "triangleVisible": true
     },
     "video_photography": {
         "title": "Erasing videos and photos",
@@ -101,7 +101,7 @@
         "class_6": "",
         "box_primary": "",
         "box_secondary": "_box_secondary_digital_media",
-        "triangule_visibled": true
+        "triangleVisible": true
     },
     "mentions_comments": {
         "title": "Mentions and comments",
@@ -123,7 +123,7 @@
         "class_6": "",
         "box_primary": "",
         "box_secondary": "_box_secondary_mentions_comments",
-        "triangule_visibled": true
+        "triangleVisible": true
     },
     "about_first": {
         "title": "World Delete is provided with<br>more than 10 years of experience",
@@ -141,7 +141,7 @@
         "class_6": "",
         "box_primary": "_box_secondary_digital_media",
         "box_secondary": "_box_secondary_digital_media",
-        "triangule_visibled": false
+        "triangleVisible": false
     },
     "about_second": {
         "title": "World Delete has increased<br>more than 200% per year",
@@ -162,7 +162,7 @@
         "class_6": "",
         "box_primary": "_box_secondary_digital_media",
         "box_secondary": "_box_secondary_digital_media",
-        "triangule_visibled": false
+        "triangleVisible": false
     },
     "content_text_about": {
        "title_primary": "Delete content <br> on the Internet",
