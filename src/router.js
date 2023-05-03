@@ -27,7 +27,7 @@ export const Routes = {
   "Deleting data": [
     {
       path: "/google_information",
-
+      label: "Google Information",
       element: (
         <BannerText
           type={1}
@@ -38,6 +38,7 @@ export const Routes = {
     },
     {
       path: "/social_networks",
+      label: "Social Networks",
       element: (
         <BannerText
           type={2}
@@ -48,6 +49,7 @@ export const Routes = {
     },
     {
       path: "/blogs_forums",
+      label: "Blog Forums",
       element: (
         <BannerText
           type={3}
@@ -58,6 +60,7 @@ export const Routes = {
     },
     {
       path: "/digital_media",
+      label: "Digital Media",
       element: (
         <BannerText
           type={4}
@@ -68,6 +71,7 @@ export const Routes = {
     },
     {
       path: "/video_photography",
+      label: "Video Photography",
       element: (
         <BannerText
           type={5}
@@ -78,6 +82,7 @@ export const Routes = {
     },
     {
       path: "/mentions_comments",
+      label: "Mentions / Comments",
       element: (
         <BannerText
           type={6}
