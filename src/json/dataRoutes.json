@@ -163,5 +163,19 @@
         "box_primary": "_box_secondary_digital_media",
         "box_secondary": "_box_secondary_digital_media",
         "triangule_visibled": false
+    },
+    "content_text_about": {
+       "title_primary": "Delete content <br> on the Internet",
+       "text_secundary": [
+            "Social networks, digital press, photographs, videos, iCloud database documentation, negative <br> comments or reviews and any other kind of detrimental information that may affect the reputation <br> and credibility of companies, institutions and individuals."
+       ]
+    },
+    "content_text_out_services": {
+       "title_primary": "Our services",
+       "text_secundary": [
+            "<span>World Delete</span> <br>Protection of the on-line <br> reputation of natural and <br> legal persons.<br>",
+            "<span>World Reputation</span><br> Automatic and manual monitoring<br> of content published on the Internet.<br> ",
+            "<span>World Intelligence</span><br> Develops internal apps for public<br> bodies and large corporations."
+       ]
     }
 }
