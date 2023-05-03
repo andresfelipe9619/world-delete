@@ -42,6 +42,63 @@ ol {
   margin-bottom: 1em;
 }
 
+div.MuiGrid-root._box_blogs_forums {
+  margin-left: 4.5em;
+}
+
+div.MuiGrid-root._box_blogs_forums > ol > li{
+   margin-bottom: 1em;
+}
+
+div.MuiGrid-root._box_blogs_forums > p {
+   margin-bottom: 1.3em;
+}
+
+div.MuiGrid-root._box_secondary_digital_media {
+  margin-top: 20%;
+}
+
+.MuiTypography-root._title_about_second {
+  font-size: 36px;
+  color: var(--color-title-blue);
+}
+
+div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
+  margin-top: 2.5em;
+  margin-left: 2.1em;
+}
+
+.MuiTypography-root._style_items_about_second {
+  color: var(--color_black);
+}
+
+.MuiGrid-container._quit_before_img > div::before {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  
+  div.MuiGrid-root._box_blogs_forums {
+    margin-left: unset;
+  }
+
+  div.MuiGrid-root._box_blogs_forums > p,
+  div.MuiGrid-root._box_blogs_forums > ol > li {
+    margin-bottom: unset;
+
+ }
+
+ div.MuiGrid-root._box_secondary_digital_media,
+ div.MuiGrid-root._box_blogs_forums > ol > li > p {
+    color: var(--color-gray);
+ }
+ 
+ div.MuiGrid-root._box_blogs_forums > ol > li:last-child,
+ div.MuiGrid-root._box_blogs_forums > ol > li:first-child {
+    display: none;
+ }
+  
+}
 
 /*
   Variables De Colores
@@ -51,5 +108,8 @@ ol {
   --color-gray: #D0CFD7;
   --color-gray-light:#F1F1F4;
   --color-white-normal: #FFFFFF;
+  --color-title-blue: #444858;
+  --color_black: #000000;
+  --color-black-semit-lite: #1A1A1F;
 }
 
