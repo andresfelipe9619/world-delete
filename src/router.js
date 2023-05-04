@@ -13,7 +13,6 @@ import SignIn from "./pages/auth/SignIn";
 import Confidentially from "./pages/clients/Confidentially";
 import JoinToTeams from "./pages/jointToTeams/JoinToTeams";
 
-
 export const Routes = {
   "Our company": [
     {
