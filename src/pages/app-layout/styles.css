@@ -75,6 +75,29 @@ div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
   opacity: 0;
 }
 
+.MuiTypography-root._title_primary_baner_about_ {
+  font-size: 36px;
+}
+
+.MuiTypography-root._text_secondary_baner_about_ {
+  font-size: 16px;
+  text-align: right;
+}
+
+._text_span_about_ {
+  width: -webkit-fill-available;
+  display: grid;
+}
+
+.button_banner_about {
+  margin-top: 0.7em;
+  width: 107px;
+  height: 37px;
+  padding: 10px 8px 10px 16px;
+  border-radius: 5px;
+  border: var(--color-121212) 1px solid;
+}
+
 @media screen and (max-width: 768px) {
   
   div.MuiGrid-root._box_blogs_forums {
@@ -96,6 +119,11 @@ div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
  div.MuiGrid-root._box_blogs_forums > ol > li:first-child {
     display: none;
  }
+
+ .MuiTypography-root._title_primary_baner_about_ {
+    font-size: 24px;
+  }
+
   
 }
 
@@ -111,5 +139,6 @@ div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
   --color_black: #000000;
   --color-black-semit-lite: #1A1A1F;
   --color-black-background: #060505;
+  --color-121212: #951919;
 }
 
