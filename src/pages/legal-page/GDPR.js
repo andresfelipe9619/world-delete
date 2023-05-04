@@ -2,7 +2,6 @@ import React from "react";
 import LegalPage from "./LegalPage";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid";
 
 const GDPR = () => {
   return (
