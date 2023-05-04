@@ -10,6 +10,8 @@ import CookiesPolicy from "./pages/legal-page/CookiesPolicy";
 import GDPR from "./pages/legal-page/GDPR";
 import SignUp from "./pages/auth/SignUp";
 import SignIn from "./pages/auth/SignIn";
+import Confidentially from "./pages/clients/Confidentially";
+
 
 export const Routes = {
   "Our company": [
@@ -118,7 +120,7 @@ export const Routes = {
     {
       path: "/confidentially",
       label: "Confidentially",
-      element: <HomePage />,
+      element: <Confidentially />,
     },
     {
       path: "/reputation-crisis",
