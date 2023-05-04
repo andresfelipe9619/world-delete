@@ -8,8 +8,11 @@ import AboutUs from "./pages/our_company/AboutUs";
 import LegalNotice from "./pages/legal-page/LegalNotice";
 import CookiesPolicy from "./pages/legal-page/CookiesPolicy";
 import GDPR from "./pages/legal-page/GDPR";
+import SignUp from "./pages/auth/SignUp";
+import SignIn from "./pages/auth/SignIn";
 import Confidentially from "./pages/clients/Confidentially";
 import JoinToTeams from "./pages/jointToTeams/JoinToTeams";
+
 
 export const Routes = {
   "Our company": [
@@ -160,12 +163,25 @@ export const Routes = {
   ],
 };
 
+const AuthRoutes = [
+  {
+    path: "/sign-up",
+    label: "Sign Up",
+    element: <SignUp />,
+  },
+  {
+    path: "/sign-in",
+    label: "Sign In",
+    element: <SignIn />,
+  },
+];
+
 const Router = () =>
   createBrowserRouter([
     {
       element: <AppLayout />,
       errorElement: <ErrorPage />,
-      children: Object.values(Routes).flatMap((v) => v),
+      children: AuthRoutes.concat(Object.values(Routes).flatMap((v) => v)),
     },
   ]);
 
