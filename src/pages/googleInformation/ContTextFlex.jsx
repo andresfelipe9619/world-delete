@@ -19,6 +19,11 @@ const styled = {
       fontSize: "36px",
       lineHeight: "57px",
       color: "var(--color-gray-light)",
+      '@media (max-width: 600px)': {
+         width: "100%",
+         display: "grid",
+         gap: "0.5em",
+      }
     },
   },
   containerSubDiv2: {
@@ -39,6 +44,10 @@ const styled = {
         textAlign: "center",
       },
     },
+    '@media (max-width: 600px)': {
+      width: "100%",
+      flexDirection: "column",
+    }
   },
 };
 
