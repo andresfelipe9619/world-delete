@@ -3,6 +3,7 @@ import AppLayout from "./pages/app-layout/AppLayout";
 import ErrorPage from "./pages/error/ErrorPage";
 import HomePage from "./pages/home/HomePage";
 import GoogleInformationPage from "./pages/googleInformation/GoogleInformationPage";
+import Confidentially from "./pages/clients/Confidentially";
 
 export const Routes = {
   "Our company": [
@@ -171,7 +172,7 @@ export const Routes = {
     {
       path: "/confidentially",
       label: "Confidentially",
-      element: <HomePage />,
+      element: <Confidentially />,
     },
     {
       path: "/reputation-crisis",
