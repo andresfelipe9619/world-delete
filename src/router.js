@@ -12,7 +12,6 @@ import SignUp from "./pages/auth/SignUp";
 import SignIn from "./pages/auth/SignIn";
 import Confidentially from "./pages/clients/Confidentially";
 
-
 export const Routes = {
   "Our company": [
     {
