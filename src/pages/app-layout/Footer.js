@@ -15,7 +15,7 @@ export default function Footer() {
         container
         spacing={2}
         justifyContent={"space-between"}
-        sx={{ px: 3 }}
+        sx={{ px: 6 }}
       >
         <Grid container item md={4} direction="column" spacing={2}>
           <Typography variant={"h2"} sx={titleStyle}>

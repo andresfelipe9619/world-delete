@@ -5,6 +5,9 @@ import HomePage from "./pages/home/HomePage";
 import BannerText from "./pages/googleInformation/BannerText";
 import json_data_pages from "./json/dataRoutes.json";
 import AboutUs from "./pages/our_company/AboutUs";
+import LegalNotice from "./pages/legal-page/LegalNotice";
+import CookiesPolicy from "./pages/legal-page/CookiesPolicy";
+import GDPR from "./pages/legal-page/GDPR";
 
 export const Routes = {
   "Our company": [
@@ -140,17 +143,17 @@ export const Routes = {
     {
       path: "/legal-notice",
       label: "Legal notice",
-      element: <HomePage />,
+      element: <LegalNotice />,
     },
     {
       path: "/cookies-policy",
       label: "Cookies policy",
-      element: <HomePage />,
+      element: <CookiesPolicy />,
     },
     {
       path: "/gdpr",
       label: "GDPR",
-      element: <HomePage />,
+      element: <GDPR />,
     },
   ],
 };
