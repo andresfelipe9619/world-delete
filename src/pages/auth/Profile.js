@@ -32,7 +32,7 @@ function getPhoneNumber(profile) {
 
 function Profile({ user }) {
   const [avatar, setAvatar] = useState(null);
-  const [uploadedFile, setUploadedFile] = useState(null);
+  const [_, setUploadedFile] = useState(null);
   const [{ data: profileData, loading }, { updateUser, getProfileData }] = [
     {},
     {},

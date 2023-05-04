@@ -10,11 +10,12 @@ import textureUrl from "../../assets/texture.jpg";
 import barsUrl from "../../assets/bars.png";
 import dashboardUrl from "../../assets/dashboard.png";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import Carousel from "../../components/carousel/Carousel";
 import FormTriangle from "./FormTriangle.js";
-const rotationSpeed = 0.001; // Ajusta la velocidad de rotación
+// import Carousel from "../../components/carousel/Carousel";
 
-export default function HomePage(props) {
+const ROTATION_SPEED = 0.001; // Ajusta la velocidad de rotación
+
+export default function HomePage() {
   return (
     <Grid container sx={{ p: 3 }}>
       <Grid item md={4}>
@@ -43,7 +44,7 @@ export default function HomePage(props) {
           <Canvas style={{ position: "relative" }}>
             <ambientLight />
             <pointLight position={[10, 10, 10]} />
-            <Planet textureUrl={textureUrl} rotationSpeed={rotationSpeed} />
+            <Planet textureUrl={textureUrl} rotationSpeed={ROTATION_SPEED} />
           </Canvas>
         </Box>
 
