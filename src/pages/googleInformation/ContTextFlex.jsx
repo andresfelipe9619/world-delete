@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Grid, Typography } from "@mui/material";
+import { Children } from 'react';
 
 const styled = {
   containerDiv: {
@@ -56,18 +57,16 @@ const ContTextFlex = ({ content, backgroundColor }) => {
         style={{ background: backgroundColor }}
       >
         <Grid item xs={12} sx={styled.containerSubDiv}>
-          <Typography variant="h1">{titlePrimary}</Typography>
+          <Typography  dangerouslySetInnerHTML={{ __html: titlePrimary }} variant="h1" />
           <Grid
             item
             xs={12}
             sx={styled.containerSubDiv2}
             style={{ columns: content.text_secundary.length }}
           >
-            {content.text_secundary.map((item, index) => {
+            {Children.map(content.text_secundary ,(item, index) => {
               return (
-                <Typography key={index} variant="body1">
-                  {item}
-                </Typography>
+                <Typography dangerouslySetInnerHTML={{ __html: item }} key={index} variant="body1" />
               );
             })}
           </Grid>
