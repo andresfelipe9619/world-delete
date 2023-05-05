@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Grid, Typography } from "@mui/material";
-import { Children } from 'react';
+import { Children } from "react";
 
 const styled = {
   containerDiv: {
@@ -19,11 +19,11 @@ const styled = {
       fontSize: "36px",
       lineHeight: "57px",
       color: "var(--color-gray-light)",
-      '@media (max-width: 600px)': {
-         width: "100%",
-         display: "grid",
-         gap: "0.5em",
-      }
+      "@media (max-width: 600px)": {
+        width: "100%",
+        display: "grid",
+        gap: "0.5em",
+      },
     },
   },
   containerSubDiv2: {
@@ -44,10 +44,10 @@ const styled = {
         textAlign: "center",
       },
     },
-    '@media (max-width: 600px)': {
+    "@media (max-width: 600px)": {
       width: "100%",
       flexDirection: "column",
-    }
+    },
   },
 };
 
@@ -66,16 +66,23 @@ const ContTextFlex = ({ content, backgroundColor }) => {
         style={{ background: backgroundColor }}
       >
         <Grid item xs={12} sx={styled.containerSubDiv}>
-          <Typography  dangerouslySetInnerHTML={{ __html: titlePrimary }} variant="h1" />
+          <Typography
+            dangerouslySetInnerHTML={{ __html: titlePrimary }}
+            variant="h1"
+          />
           <Grid
             item
             xs={12}
             sx={styled.containerSubDiv2}
             style={{ columns: content.text_secundary.length }}
           >
-            {Children.map(content.text_secundary ,(item, index) => {
+            {Children.map(content.text_secundary, (item, index) => {
               return (
-                <Typography dangerouslySetInnerHTML={{ __html: item }} key={index} variant="body1" />
+                <Typography
+                  dangerouslySetInnerHTML={{ __html: item }}
+                  key={index}
+                  variant="body1"
+                />
               );
             })}
           </Grid>
