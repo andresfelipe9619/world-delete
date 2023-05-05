@@ -31,6 +31,7 @@
     "precommit": "lint-staged",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,12 +40,19 @@
     "extends": [
       "react-app",
       "react-app/jest",
+      "eslint:recommended",
       "plugin:prettier/recommended"
-    ]
+    ],
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    }
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
+    "*.{js,json,css,md}": [
+      "npm run format",
+      "npm run lint:fix",
       "git add"
     ]
   },
@@ -65,6 +73,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
-    "prettier": "^2.8.7"
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8"
   }
 }
