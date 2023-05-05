@@ -49,8 +49,13 @@
       "es6": true
     }
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "*.{js,json,css,md}": [
+    "*.{js,jsx,json,css,md}": [
       "npm run format",
       "npm run lint:fix",
       "git add"
