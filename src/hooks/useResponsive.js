@@ -1,9 +1,12 @@
-import { useBreakpointValue } from "@aws-amplify/ui-react";
+import { useTheme, useMediaQuery } from "@mui/material";
 
-function useResponsive() {
-  const screen = useBreakpointValue(["base", "sm", "md", "large"]);
-  const isMobile = ["base", "sm"].includes(screen);
-  return { screen, isMobile };
-}
+const useResponsive = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMediumScreen = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg"));
+
+  return { isSmallScreen, isMediumScreen, isLargeScreen };
+};
 
 export default useResponsive;
