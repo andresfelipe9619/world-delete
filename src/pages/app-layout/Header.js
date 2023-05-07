@@ -13,12 +13,12 @@ import { Link as RouterLink } from "react-router-dom";
 import "./styles.css";
 import MenuDrawer from "./Menu";
 import { Link } from "@mui/material";
+import useResponsive from "../../hooks/useResponsive";
 
 export default function Header(props) {
   const [anchorEl, setAnchorEl] = useState(null);
   const [openDrawer, setOpenDrawer] = useState(false);
-  // const navigate = useNavigate();
-  // const go2 = (path) => () => navigate(path);
+  const { isSmallScreen } = useResponsive();
 
   const handleOpenTranslation = (event) => setAnchorEl(event.currentTarget);
 
@@ -45,30 +45,36 @@ export default function Header(props) {
             >
               World Delete
             </Link>
-            <Link
-              component={RouterLink}
-              to="/how-it-work"
-              underline="none"
-              sx={{ flexGrow: 1, color: "white" }}
-            >
-              How it works
-            </Link>
-            <Link
-              component={RouterLink}
-              to="/faq"
-              underline="none"
-              sx={{ flexGrow: 1, color: "white" }}
-            >
-              FAQ
-            </Link>
-            <Link
-              component={RouterLink}
-              to="/introduction"
-              underline="none"
-              sx={{ flexGrow: 1, color: "white" }}
-            >
-              Introduction
-            </Link>
+            {!isSmallScreen && (
+              <Link
+                component={RouterLink}
+                to="/how-it-work"
+                underline="none"
+                sx={{ flexGrow: 1, color: "white" }}
+              >
+                How it works
+              </Link>
+            )}
+            {!isSmallScreen && (
+              <Link
+                component={RouterLink}
+                to="/faq"
+                underline="none"
+                sx={{ flexGrow: 1, color: "white" }}
+              >
+                FAQ
+              </Link>
+            )}
+            {!isSmallScreen && (
+              <Link
+                component={RouterLink}
+                to="/introduction"
+                underline="none"
+                sx={{ flexGrow: 1, color: "white" }}
+              >
+                Introduction
+              </Link>
+            )}
             <div>
               <IconButton
                 size="large"

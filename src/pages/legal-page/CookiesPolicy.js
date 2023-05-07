@@ -2,40 +2,25 @@ import React from "react";
 import LegalPage from "./LegalPage";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid";
 
 const CookiesPolicy = () => {
   return (
     <LegalPage
+      biggerRight
       left={() => (
         <Box display={"flex"} flexDirection={"column"}>
           <Typography variant={"h2"} sx={{ fontWeight: "bold", mb: 4 }}>
-            Privacy policy
-          </Typography>
-          <Typography sx={{ mb: 4 }}>
-            How and why do we use your your data on our webpage?
-          </Typography>
-          <Typography variant={"caption"}>
-            World Delete uses your personal data for the following purposes:
+            Cookies policy
           </Typography>
         </Box>
       )}
       right={() => (
         <Box display={"flex"} flexDirection={"column"}>
-          <Typography variant={"h3"} sx={{ mb: 4 }} gutterBottom>
-            Responsible for processing
-          </Typography>
           <Typography variant={"caption"} gutterBottom>
-            Identity of responsible party: WORLD DELETE LLC
-          </Typography>
-          <Typography variant={"caption"} gutterBottom>
-            Commercial name: World Delete
-          </Typography>
-          <Typography variant={"caption"} gutterBottom>
-            Address: 4300 Biscayne Blvd, Miami, FL 33137, EE.UU.
-          </Typography>
-          <Typography variant={"caption"} gutterBottom>
-            Email: info@world-delete.com
+            We gather and use information as indicated in our Legal Notice. One
+            of the ways we gather information is through the use of the
+            technology called “cookies”. At World Delete, we use cookies for
+            various things.
           </Typography>
         </Box>
       )}
@@ -51,93 +36,79 @@ const CookiesPolicy = () => {
           }}
         >
           <Paragraph
-            title={"Typical contractual purposes"}
+            title={"What is a cookie?"}
             content={
-              "Contract, maintain and continue fulfilment of the contracts for products and services that you have with World Delete."
+              "A cookie is a small quantity of text that is saved by your browser (like Google Chrome or Apple Safari) when you surf the majority of websites."
             }
           />
           <Paragraph
-            title={"Purposes that require your consent"}
+            title={"What ISN’T a cookie?"}
             content={
-              "Development of commercial actions regarding offered services. Attend to user information requirements on the web, with the consent of the user."
+              "It’s not a virus, or a trojan or a worm. Nor is it spam, spyware or capable of opening pop-up windows."
             }
           />
           <Paragraph
-            title={"Purposes related to legitimate interests of world delete"}
+            title={"What information is saved in a cookie?"}
             content={
-              "Development of general commercial actions, in particular, to offer and recommend World Delete services.\n" +
-              "Process user information petitions through the webpage of World Delete, with the consent of the user."
+              "Cookies don’t tend to save sensitive information about you, like credit card numbers or bank information, photographs or personal information, etc.\n" +
+              "The data that is saved is of technical character, statistics, personal preferences, content personalisation, etc.\n" +
+              "The web server doesn’t identify you as a person, but through your browser. In fact, if you regularly surf with Google Chrome and try to go to the same website with the Firefox browser, you’ll see that the web doesn’t realise you are the same person because, in reality you are associated with the browser information and not as a person."
             }
           />
           <Paragraph
-            title={"Conservation criteria"}
+            title={"What type of cookies exist?"}
             content={
-              "Your personal data is saved while you have a mercantile and/or commercial relationship and they will be deleted when they are no longer needed for the reason they were collected."
+              "Technical Cookies: These are the simplest and allow, among other things, to know when a person or automated application is surfing the web, when an anonymous or registered person is surfing, basic tasks that allow for functioning of a dynamic web.\n" +
+              "Analysis Cookies: They collect information about the type of surfing that is occurring, the most used sections, consulted products, schedule of usage, language, etc.\n" +
+              "Publicity Cookies: They show adverts based on your surfing habits, what country to are in, language, etc."
             }
           />
           <Paragraph
-            title={"Recipients"}
+            title={"What are first-party cookies and those of third parties?"}
             content={
-              "We do not share your data with third parties. In the case of including other recipients in the future, we will request explicit permission from users before processing."
+              "Individual cookies are generated by the page you are visiting and those of third parties are generated by external services and providers like Mailchimp, Mailrelay, Facebook, Twitter, Google adsense, etc."
             }
           />
-          <Typography variant={"h3"} sx={{ mt: 4, mb: 4 }}>
-            What rights do you have?
-          </Typography>
-          <Grid container sx={{ mb: 4 }}>
-            <Grid item container sm={6} flexDirection={"column"}>
-              <Typography variant={"h3"} sx={{ mb: 3 }}>
-                You can exercise the following rights:{" "}
-              </Typography>
-              <Grid container>
-                <Grid item container sm={6} flexDirection={"column"}>
-                  <Typography variant={"body2"} sx={{ mb: 2 }}>
-                    Opposition
-                  </Typography>
-                  <Typography variant={"body2"} sx={{ mb: 2 }}>
-                    Access
-                  </Typography>
-                  <Typography variant={"body2"} sx={{ mb: 2 }}>
-                    Rectification
-                  </Typography>
-                  <Typography variant={"body2"} sx={{ mb: 2 }}>
-                    Suppression (right to oblivion)
-                  </Typography>
-                </Grid>
-                <Grid item container sm={6} flexDirection={"column"}>
-                  <Typography variant={"body2"} sx={{ mb: 2 }}>
-                    Limitation
-                  </Typography>
-                  <Typography variant={"body2"} sx={{ mb: 2 }}>
-                    Portability
-                  </Typography>
-                  <Typography variant={"body2"} sx={{ mb: 2 }}>
-                    Revocation of permission
-                  </Typography>
-                </Grid>
-              </Grid>
-            </Grid>
-            <Grid item container sm={6} flexDirection={"column"}>
-              <Typography variant={"body2"} sx={{ mb: 4 }}>
-                You can exercise these rights and, in general, consult all
-                related information of the treatment of your personal data, by
-                emailing info@world-delete.com.
-              </Typography>{" "}
-              <Typography variant={"body2"} sx={{ mb: 4 }}>
-                You must include a copy of an official photo document, such as a
-                DNI.
-              </Typography>{" "}
-              <Typography variant={"body2"} sx={{ mb: 4 }}>
-                You can also present any complaint to the Spanish Agency of Data
-                Protection. Necessary information can be found at: www.aepd.es.
-              </Typography>
-            </Grid>
-          </Grid>
-
           <Paragraph
-            title={"Any doubts?"}
+            title={"What cookies are used on this website?"}
             content={
-              "Don’t hesitate to contact us by email: info@world-delete.com. if you need any clarification regarding the Privacy Policy of world-delete.com."
+              "This web uses its own cookies and those of third parties. On this website, we use the following cookies."
+            }
+          />
+          <Paragraph
+            title={"Third-party cookies"}
+            content={
+              "This website uses analysis services, specifically from Google Analytics, to help us analyse how our users use the website and to become more user friendly. We will never share any data that could identify the user. Google Analytics is an analytical service provided by Google, Inc. You can consult the type of cookies used by Google here."
+            }
+          />
+          <Paragraph
+            title={
+              "Information about the way to disactivate or delete declared cookies on the main browsers."
+            }
+            content={
+              "You can allow, block or eliminate cookies installed on your computer with the configuration option of your installed browser."
+            }
+          />
+          <Paragraph
+            title={"Firefox"}
+            content={
+              "https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias?redirectlocale=es&redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we"
+            }
+          />
+          <Paragraph
+            title={"Chrome"}
+            content={"https://support.google.com/chrome/answer/95647?hl=es"}
+          />
+          <Paragraph
+            title={"Internet Explorer"}
+            content={
+              "https://support.microsoft.com/es-es/windows/eliminar-y-administrar-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
+            }
+          />
+          <Paragraph
+            title={"Safari"}
+            content={
+              "https://support.apple.com/ru-ru/guide/safari/sfri11471/mac"
             }
           />
         </Box>
