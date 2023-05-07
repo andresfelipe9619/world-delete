@@ -13,6 +13,7 @@ import SignIn from "./pages/auth/SignIn";
 import Confidentially from "./pages/clients/Confidentially";
 import JoinToTeams from "./pages/jointToTeams/JoinToTeams";
 import ReputationCrisis from "./pages/clients/ReputationCrisis";
+import FinancialCompilance from "./pages/finacial_data/FinancialCompilance";
 
 export const Routes = {
   "Our company": [
@@ -114,7 +115,11 @@ export const Routes = {
     {
       path: "/financial-compliance",
       label: "Financial Compliance",
-      element: <HomePage />,
+      element: <FinancialCompilance 
+                      type={1}      
+                      json={json_data_pages} 
+                      url={'FinancialCompilance.png'}
+      />,
     },
   ],
   Clients: [
