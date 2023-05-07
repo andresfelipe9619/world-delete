@@ -3,7 +3,6 @@ import React from "react";
 import BannerText from "../googleInformation/BannerText";
 import FormTriangle from "../home/FormTriangle";
 import ContTextFlex from "../googleInformation/ContTextFlex";
-import { Button } from "@mui/material";
 
 export default function AboutUs(props) {
   console.log(props);

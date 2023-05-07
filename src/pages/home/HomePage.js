@@ -11,11 +11,13 @@ import barsUrl from "../../assets/bars.png";
 import dashboardUrl from "../../assets/dashboard.png";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import FormTriangle from "./FormTriangle.js";
+import useResponsive from "../../hooks/useResponsive";
 // import Carousel from "../../components/carousel/Carousel";
 
 const ROTATION_SPEED = 0.001; // Ajusta la velocidad de rotación
 
 export default function HomePage() {
+  const { isSmallScreen } = useResponsive();
   return (
     <Grid container sx={{ p: 3 }}>
       <Grid item md={4}>
@@ -48,11 +50,13 @@ export default function HomePage() {
           </Canvas>
         </Box>
 
-        <Box sx={{ position: "absolute", right: 40, top: 200 }}>
-          <CustomBox value={120} label={"happy clients"} />
-          <CustomBox value={9} label={"years of experience"} />
-          <CustomBox value={"1K TB"} label={"of deleted info"} />
-        </Box>
+        {!isSmallScreen && (
+          <Box sx={{ position: "absolute", right: 40, top: 200 }}>
+            <CustomBox value={120} label={"happy clients"} />
+            <CustomBox value={9} label={"years of experience"} />
+            <CustomBox value={"1K TB"} label={"of deleted info"} />
+          </Box>
+        )}
       </Grid>
       {/*<Grid item md={12}>*/}
       {/*  <Carousel />*/}

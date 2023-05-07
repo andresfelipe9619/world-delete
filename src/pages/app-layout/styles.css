@@ -1,6 +1,5 @@
 /* Style the header */
 
-
 /*!* Page content *!*/
 /*@media screen and (min-width: 768px) {*/
 /*  .content {*/
@@ -9,7 +8,7 @@
 /*}*/
 
 .background-triangle {
-  background-image: url('../../assets/triangle-bg.png');
+  background-image: url("../../assets/triangle-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,7 +36,7 @@ ol {
   margin-block-start: 0;
 }
 
-.ol_style_container.item > li{
+.ol_style_container.item > li {
   margin-bottom: 1em;
 }
 
@@ -45,12 +44,12 @@ div.MuiGrid-root._box_blogs_forums {
   margin-left: 4.5em;
 }
 
-div.MuiGrid-root._box_blogs_forums > ol > li{
-   margin-bottom: 1em;
+div.MuiGrid-root._box_blogs_forums > ol > li {
+  margin-bottom: 1em;
 }
 
 div.MuiGrid-root._box_blogs_forums > p {
-   margin-bottom: 1.3em;
+  margin-bottom: 1.3em;
 }
 
 div.MuiGrid-root._box_secondary_digital_media {
@@ -99,7 +98,6 @@ div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
 }
 
 @media screen and (max-width: 768px) {
-  
   div.MuiGrid-root._box_blogs_forums {
     margin-left: unset;
   }
@@ -107,24 +105,21 @@ div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
   div.MuiGrid-root._box_blogs_forums > p,
   div.MuiGrid-root._box_blogs_forums > ol > li {
     margin-bottom: unset;
-
- }
-
- div.MuiGrid-root._box_secondary_digital_media,
- div.MuiGrid-root._box_blogs_forums > ol > li > p {
-    color: var(--color-gray);
- }
- 
- div.MuiGrid-root._box_blogs_forums > ol > li:last-child,
- div.MuiGrid-root._box_blogs_forums > ol > li:first-child {
-    display: none;
- }
-
- .MuiTypography-root._title_primary_baner_about_ {
-    font-size: 24px;
   }
 
-  
+  div.MuiGrid-root._box_secondary_digital_media,
+  div.MuiGrid-root._box_blogs_forums > ol > li > p {
+    color: var(--color-gray);
+  }
+
+  div.MuiGrid-root._box_blogs_forums > ol > li:last-child,
+  div.MuiGrid-root._box_blogs_forums > ol > li:first-child {
+    display: none;
+  }
+
+  .MuiTypography-root._title_primary_baner_about_ {
+    font-size: 24px;
+  }
 }
 
 /*
@@ -132,13 +127,12 @@ div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
 */
 
 :root {
-  --color-gray: #D0CFD7;
-  --color-gray-light:#F1F1F4;
-  --color-white-normal: #FFFFFF;
+  --color-gray: #d0cfd7;
+  --color-gray-light: #f1f1f4;
+  --color-white-normal: #ffffff;
   --color-title-blue: #444858;
   --color_black: #000000;
-  --color-black-semit-lite: #1A1A1F;
+  --color-black-semit-lite: #1a1a1f;
   --color-black-background: #060505;
   --color-121212: #951919;
 }
-

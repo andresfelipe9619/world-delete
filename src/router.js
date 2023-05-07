@@ -12,7 +12,7 @@ import SignUp from "./pages/auth/SignUp";
 import SignIn from "./pages/auth/SignIn";
 import Confidentially from "./pages/clients/Confidentially";
 import JoinToTeams from "./pages/jointToTeams/JoinToTeams";
-
+import ReputationCrisis from "./pages/clients/ReputationCrisis";
 
 export const Routes = {
   "Our company": [
@@ -126,7 +126,7 @@ export const Routes = {
     {
       path: "/reputation-crisis",
       label: "Reputation crisis",
-      element: <HomePage />,
+      element: <ReputationCrisis />,
     },
     {
       path: "/faq",

@@ -28,6 +28,7 @@ const BannerText = (props) => {
 
   useEffect(() => {
     addClassHeader();
+    return () => removeClassHeader();
   }, []);
 
   return (
@@ -37,12 +38,20 @@ const BannerText = (props) => {
           <img src={images_content(`./${props.url}`)} alt="banner" />
           <Grid item xs={12}>
             <Grid item xs={12} className={box_primary}>
-              <Typography dangerouslySetInnerHTML={{ __html: title }} sx={styles.titleStyle} className={class_2} />
+              <Typography
+                dangerouslySetInnerHTML={{ __html: title }}
+                sx={styles.titleStyle}
+                className={class_2}
+              />
               <ol className={`ol_style_container ${class_3}`}>
                 {text_1.map((item, index) => {
                   return (
                     <li key={index}>
-                      <Typography  dangerouslySetInnerHTML={{ __html: item }} sx={styles.textNormal} className={class_4} />
+                      <Typography
+                        dangerouslySetInnerHTML={{ __html: item }}
+                        sx={styles.textNormal}
+                        className={class_4}
+                      />
                     </li>
                   );
                 })}
@@ -53,7 +62,11 @@ const BannerText = (props) => {
                 {text_2.map((item, index) => {
                   return (
                     <li key={index}>
-                      <Typography dangerouslySetInnerHTML={{ __html: item }} sx={styles.textNormal} className={class_6} />
+                      <Typography
+                        dangerouslySetInnerHTML={{ __html: item }}
+                        sx={styles.textNormal}
+                        className={class_6}
+                      />
                     </li>
                   );
                 })}
@@ -74,4 +87,12 @@ function addClassHeader() {
   header.classList.add("header__google_information");
   headerHeight.classList.add("_height_header_");
 }
+function removeClassHeader() {
+  const header = document.querySelector("#header_component");
+  const headerHeight = document.querySelector("#_height_header_");
+
+  header.classList.remove("header__google_information");
+  headerHeight.classList.remove("_height_header_");
+}
+
 export default BannerText;
