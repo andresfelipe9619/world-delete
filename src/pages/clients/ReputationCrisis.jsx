@@ -8,7 +8,7 @@ import { Typography } from "@mui/material";
  *
  * @returns {React.Component}
  */
-const JoinToTeams = () => {
+const ReputationCrisis = () => {
   return (
     <>
       <FormTriangle styleHeader={true} styleContainer={{ paddingTop: "7em" }}>
@@ -23,11 +23,27 @@ const JoinToTeams = () => {
             fontWeight: 400,
           }}
         >
-          Join the team
+          Reputational crisis
+        </Typography>
+        <Typography
+          sx={{
+            maxWidth: "100%",
+            marginLeft: "1em",
+            marginTop: "1em",
+            fontSize: "16px",
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: "176%",
+          }}
+        >
+          Don’t wait any longer for help if you are suffering from <br />
+          a reputational crisis. Contact us using the following <br />
+          form and we will get in touch with you in less than thirty <br />
+          (30) minutes.
         </Typography>
       </FormTriangle>
     </>
   );
 };
 
-export default JoinToTeams;
+export default ReputationCrisis;
