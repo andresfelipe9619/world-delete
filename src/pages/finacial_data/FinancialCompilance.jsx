@@ -5,7 +5,6 @@ import BannerText from "../googleInformation/BannerText";
 import SearchSliderLink from "../googleInformation/SearchSliderLink";
 import styles from "../googleInformation/styles";
 
-
 /**
  * @AUTHOR <cristian.machado@correounivalle.edu.co>
  * @description Page to join to teams

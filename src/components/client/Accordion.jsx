@@ -24,8 +24,7 @@ const useStyles = makeStyles((theme) => ({
       borderBottom: "1px solid #464656",
       padding: 0,
       margin: "0 16px",
-    }
-
+    },
   },
   heading: {
     flexBasis: "40%",
@@ -40,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
   },
   content: {
-    color: '#fff'
+    color: "#fff",
   },
   expandIcon: {
     color: "#fff",
