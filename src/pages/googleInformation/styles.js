@@ -1,5 +1,3 @@
-import { max } from "date-fns";
-
 const styles = {
   containerDiv: {
     minHeight: "35vh",

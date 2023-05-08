@@ -1,8 +1,8 @@
 //import React
-import React, { useEffect } from "react";
+import React from "react";
 import BannerText from "../googleInformation/BannerText";
 import styles from "../googleInformation/styles";
-import { Grid, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 
 const SocialNetwork = (props) => {
   return (
