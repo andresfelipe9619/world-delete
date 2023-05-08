@@ -23,7 +23,7 @@ const DefaultSettingsT = {
 };
 
 const Example = () => {
-  const [settings, setSettings] = useState(DefaultSettingsT);
+  const [settings] = useState(DefaultSettingsT);
 
   return (
     <div style={{ marginTop: "50px", color: "#494949" }}>
