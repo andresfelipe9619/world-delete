@@ -13,6 +13,7 @@ import SignIn from "./pages/auth/SignIn";
 import Confidentially from "./pages/clients/Confidentially";
 import JoinToTeams from "./pages/jointToTeams/JoinToTeams";
 import ReputationCrisis from "./pages/clients/ReputationCrisis";
+import ContactUs from "./pages/contact/ContactUs";
 import FinancialCompilance from "./pages/finacial_data/FinancialCompilance";
 import GoogleInformation from "./pages/deletingData/GoogleInformation";
 import SocialNetwork from "./pages/deletingData/SocialNetwork";
@@ -20,6 +21,7 @@ import BlogsForums from "./pages/deletingData/BlogsForums";
 import DigitalMedia from "./pages/deletingData/DigitalMedia";
 import VideoPhotography from "./pages/deletingData/VideoPhotography";
 import MentionsComments from "./pages/deletingData/MentionsComments";
+
 
 export const Routes = {
   "Our company": [
@@ -161,6 +163,11 @@ const AuthRoutes = [
     path: "/sign-up",
     label: "Sign Up",
     element: <SignUp />,
+  },
+  {
+    path: "/contact-us",
+    label: "Contact us",
+    element: <ContactUs />,
   },
   {
     path: "/sign-in",
