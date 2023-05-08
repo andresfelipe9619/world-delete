@@ -16,9 +16,6 @@ const BannerText = (props) => {
     class_1,
     box_primary,
     class_2,
-    class_3,
-    text_1,
-    class_4,
     box_secondary,
     class_5,
     text_2,
@@ -43,19 +40,7 @@ const BannerText = (props) => {
                 sx={styles.titleStyle}
                 className={class_2}
               />
-              <ol className={`ol_style_container ${class_3}`}>
-                {text_1.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <Typography
-                        dangerouslySetInnerHTML={{ __html: item }}
-                        sx={styles.textNormal}
-                        className={class_4}
-                      />
-                    </li>
-                  );
-                })}
-              </ol>
+              {props.children}
             </Grid>
             <Grid className={`item_text_long ${box_secondary}`} item xs={12}>
               <ol className={`ol_style_container item ${class_5}`}>
