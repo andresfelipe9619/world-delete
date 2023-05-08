@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "./pages/app-layout/AppLayout";
 import ErrorPage from "./pages/error/ErrorPage";
 import HomePage from "./pages/home/HomePage";
-import BannerText from "./pages/googleInformation/BannerText";
 import json_data_pages from "./json/dataRoutes.json";
 import AboutUs from "./pages/our_company/AboutUs";
 import LegalNotice from "./pages/legal-page/LegalNotice";
@@ -21,7 +20,6 @@ import BlogsForums from "./pages/deletingData/BlogsForums";
 import DigitalMedia from "./pages/deletingData/DigitalMedia";
 import VideoPhotography from "./pages/deletingData/VideoPhotography";
 import MentionsComments from "./pages/deletingData/MentionsComments";
-
 
 export const Routes = {
   "Our company": [
@@ -45,50 +43,34 @@ export const Routes = {
     {
       path: "/google_information",
       label: "Google Information",
-      element: <GoogleInformation 
-                        json={json_data_pages['google_information']} 
-               />,
+      element: (
+        <GoogleInformation json={json_data_pages["google_information"]} />
+      ),
     },
     {
       path: "/social_networks",
       label: "Social Networks",
-      element: <SocialNetwork
-                    json={json_data_pages["social_networks"]}
-              />,
+      element: <SocialNetwork json={json_data_pages["social_networks"]} />,
     },
     {
       path: "/blogs_forums",
       label: "Blog Forums",
-      element: <BlogsForums
-              json={json_data_pages["blogs_forums"]}
-        />,
+      element: <BlogsForums json={json_data_pages["blogs_forums"]} />,
     },
     {
       path: "/digital_media",
       label: "Digital Media",
-      element: (
-        <DigitalMedia
-          json={json_data_pages["digital_media"]}
-        />
-      ),
+      element: <DigitalMedia json={json_data_pages["digital_media"]} />,
     },
     {
       path: "/video_photography",
       label: "Video Photography",
-      element: (
-        <VideoPhotography
-          json={json_data_pages["video_photography"]}
-        />
-      ),
+      element: <VideoPhotography json={json_data_pages["video_photography"]} />,
     },
     {
       path: "/mentions_comments",
       label: "Mentions / Comments",
-      element: (
-        <MentionsComments
-          json={json_data_pages["mentions_comments"]}
-        />
-      ),
+      element: <MentionsComments json={json_data_pages["mentions_comments"]} />,
     },
   ],
   "Financial data": [
@@ -105,11 +87,13 @@ export const Routes = {
     {
       path: "/financial-compliance",
       label: "Financial Compliance",
-      element: <FinancialCompilance 
-                      type={1}      
-                      json={json_data_pages} 
-                      url={'FinancialCompilance.png'}
-      />,
+      element: (
+        <FinancialCompilance
+          type={1}
+          json={json_data_pages}
+          url={"FinancialCompilance.png"}
+        />
+      ),
     },
   ],
   Clients: [
