@@ -11,6 +11,7 @@ import GDPR from "./pages/legal-page/GDPR";
 import SignUp from "./pages/auth/SignUp";
 import SignIn from "./pages/auth/SignIn";
 import Confidentially from "./pages/clients/Confidentially";
+import HowItWork from "./pages/clients/HowItWork";
 import JoinToTeams from "./pages/jointToTeams/JoinToTeams";
 
 export const Routes = {
@@ -135,7 +136,7 @@ export const Routes = {
     {
       path: "/how-it-work",
       label: "How it work",
-      element: <HomePage />,
+      element: <HowItWork />,
     },
     {
       path: "/internet-customers",
