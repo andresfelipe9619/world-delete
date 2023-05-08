@@ -172,5 +172,23 @@
       "<span class='_text_span_about_'>World Reputation</span><br> Automatic and manual monitoring<br> of content published on the Internet.<br> ",
       "<span class='_text_span_about_'>World Intelligence</span><br> Develops internal apps for public<br> bodies and large corporations."
     ]
+  },
+  "FinancialCompilance": {
+    "title": "Currently there are three well-known and frequently-used <br>databases to which only the credit institutions,<br> corporations and private entities have access. ",
+    "text_1": [
+      "Currently there are three well-known and frequently-used",
+      "databases to which only the credit institutions,",
+      ""
+    ],
+    "text_2": [""],
+    "class_1": "",
+    "class_2": "",
+    "class_3": "",
+    "class_4": "",
+    "class_5": "",
+    "class_6": "",
+    "box_primary": "",
+    "box_secondary": "",
+    "triangleVisible": false
   }
 }
