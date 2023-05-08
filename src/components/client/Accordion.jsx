@@ -7,7 +7,7 @@ import {
   Typography,
   Box,
 } from "@material-ui/core";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,8 +24,7 @@ const useStyles = makeStyles((theme) => ({
       borderBottom: "1px solid #464656",
       padding: 0,
       margin: "0 16px",
-    }
-
+    },
   },
   heading: {
     flexBasis: "40%",
@@ -40,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
   },
   content: {
-    color: '#fff'
+    color: "#fff",
   },
   expandIcon: {
     color: "#fff",
