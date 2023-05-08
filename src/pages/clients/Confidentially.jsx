@@ -1,5 +1,4 @@
 import React from "react";
-import { Typography } from "@mui/material";
 import FormTriangle from "../home/FormTriangle";
 import BannerText from "../googleInformation/BannerText";
 
