@@ -6,22 +6,18 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& .MuiTimelineItem-alternate:nth-of-type(even)": {
-      backgroundColor: "#f5f5f5",
-    },
+const styles = {
+  "& .MuiTimelineItem-alternate:nth-of-type(even)": {
+    backgroundColor: "#f5f5f5",
   },
-}));
+};
 
 function TimelineExample(props) {
   const { events } = props;
-  const classes = useStyles();
 
   return (
-    <Timeline position="alternate" className={classes.root}>
+    <Timeline position="alternate" sx={styles}>
       {events.map((event, index) => {
         return (
           <TimelineItem key={index}>
