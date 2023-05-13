@@ -1,10 +1,9 @@
 import React from "react";
 import FormTriangle from "../home/FormTriangle";
-import { Grid, Typography, Button } from "@mui/material";
+import { Typography, Button } from "@mui/material";
 import BannerText from "../googleInformation/BannerText";
 import SearchSliderLink from "../googleInformation/SearchSliderLink";
 import styles from "../googleInformation/styles";
-
 
 /**
  * @AUTHOR <cristian.machado@correounivalle.edu.co>
