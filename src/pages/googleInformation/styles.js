@@ -146,5 +146,39 @@ const styles = {
       fill: "#7F8088",
     },
   },
+  gridContainerDeleteErase: {
+    display: "grid",
+    width: "100%",
+    height: "auto",
+    minHeight: "32em",
+    backgroundColor: "var(--color_black)",
+    padding: "4em",
+  },
+  titlePageErase: {
+    fontStyle: "normal",
+    fontStyle: 'normal',
+    fontWeight: 400,
+    fontSize: '36px',
+    color: 'var(--color-white-normal)',
+  },
+  textTableErase: {
+    fontStyle: 'normal',
+    fontWeight: 400,
+    fontSize: '16px',
+    lineheight: '176%',
+    color: 'var(--color-white-normal)',
+  },
+  containerTableErase: {
+      '& > div': {
+        borderTop: '2px solid var(--color-black-4656)',
+        '&:last-of-type': {
+          borderBottom: '2px solid var(--color-black-4656)',
+        }
+      }
+  },
+  containerTitleErase: {
+      marginTop: '2em',
+      marginBottom: '2em',
+  }
 };
 export default styles;
