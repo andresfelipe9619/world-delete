@@ -97,6 +97,26 @@ div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
   border: var(--color-121212) 1px solid;
 }
 
+.hover_:hover {
+  background-color: var(--color-gray-3d4);
+  margin: -0.7em -2em 0 -2em;
+  padding: 0.7em 2em 0 2em;
+}
+
+.css-jo4aww-MuiGrid-root ._containerFullWidth {
+  grid-template-columns: 100%;
+}
+
+div.css-jo4aww-MuiGrid-root ._financial_compilance_box_primary {
+   justify-self: flex-start;
+   margin-top: 13%;
+   margin-left: 4em;
+}
+
+.css-15p99sx-MuiTypography-root._fontSize36 {
+  font-size: 36px;
+}
+
 @media screen and (max-width: 768px) {
   div.MuiGrid-root._box_blogs_forums {
     margin-left: unset;
@@ -136,4 +156,5 @@ div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
   --color-black-background: #060505;
   --color-121212: #951919;
   --color-gray-medium: #303134;
+  --color-gray-3d4: #3D4043;
 }

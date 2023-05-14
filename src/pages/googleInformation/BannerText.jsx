@@ -21,7 +21,9 @@ const BannerText = (props) => {
     text_2,
     class_6,
     triangleVisible,
+    class_container__
   } = props.content;
+
 
   useEffect(() => {
     addClassHeader();
@@ -33,7 +35,7 @@ const BannerText = (props) => {
       <Grid container sx={styles.containerDiv} className={class_1}>
         <Grid item xs={12}>
           <img src={images_content(`./${props.url}`)} alt="banner" />
-          <Grid item xs={12}>
+          <Grid className={class_container__} item xs={12}>
             <Grid item xs={12} className={box_primary}>
               <Typography
                 dangerouslySetInnerHTML={{ __html: title }}

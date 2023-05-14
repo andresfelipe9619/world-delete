@@ -37,30 +37,35 @@ const items = [
 const events = [
   {
     title: "Item 1",
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit ante quis mauris sollicitudin porttitor. Sed elementum dictum lectus, at hendrerit nisi interdum a."
+    detail:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit ante quis mauris sollicitudin porttitor. Sed elementum dictum lectus, at hendrerit nisi interdum a.",
   },
   {
     title: "Item 2",
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum a nibh quis rutrum. Nullam fringilla mauris eget turpis maximus vehicula. Donec rhoncus convallis ex, ut tristique dolor pellentesque ut."
+    detail:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum a nibh quis rutrum. Nullam fringilla mauris eget turpis maximus vehicula. Donec rhoncus convallis ex, ut tristique dolor pellentesque ut.",
   },
   {
     title: "Item 3",
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet dolor sit amet ipsum congue, vitae feugiat elit volutpat. Suspendisse scelerisque facilisis libero, eu laoreet tellus vestibulum eget."
+    detail:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet dolor sit amet ipsum congue, vitae feugiat elit volutpat. Suspendisse scelerisque facilisis libero, eu laoreet tellus vestibulum eget.",
   },
   {
     title: "Item 4",
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id arcu massa. Sed nec justo sit amet ex vehicula malesuada vel sit amet tortor. Nullam malesuada justo vel tellus bibendum, eu lacinia turpis placerat."
+    detail:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id arcu massa. Sed nec justo sit amet ex vehicula malesuada vel sit amet tortor. Nullam malesuada justo vel tellus bibendum, eu lacinia turpis placerat.",
   },
   {
     title: "Item 5",
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet libero ut magna auctor, vel tincidunt mauris gravida. Nullam ut elit nec elit suscipit cursus. Integer eget ligula malesuada, pulvinar felis in, feugiat enim."
+    detail:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet libero ut magna auctor, vel tincidunt mauris gravida. Nullam ut elit nec elit suscipit cursus. Integer eget ligula malesuada, pulvinar felis in, feugiat enim.",
   },
   {
     title: "Item 6",
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper ex vel sem euismod, vel auctor neque scelerisque. Praesent congue felis vel ligula hendrerit sagittis. Sed hendrerit eget sapien ac aliquam."
-  }
+    detail:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper ex vel sem euismod, vel auctor neque scelerisque. Praesent congue felis vel ligula hendrerit sagittis. Sed hendrerit eget sapien ac aliquam.",
+  },
 ];
-
 
 const bannerStyle = {
   title: "How it work",
@@ -81,15 +86,12 @@ const bannerStyle = {
   triangleVisible: false,
 };
 
-
 const HowItWork = () => {
   const { isSmallScreen } = useResponsive();
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "100px" }}>
       <BannerText content={bannerStyle} url={"how-it-works.png"} />
-      {!isSmallScreen && (
-        <CustomAccordion items={items} />
-      )}
+      {!isSmallScreen && <CustomAccordion items={items} />}
       <TimelineExample events={events} />
       <FormTriangle />
     </div>
