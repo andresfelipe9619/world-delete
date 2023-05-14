@@ -174,7 +174,7 @@
     ]
   },
   "FinancialCompilance": {
-    "title": "Currently there are three well-known and frequently-used <br>databases to which only the credit institutions,<br> corporations and private entities have access. ",
+    "title": "Can you imagine how it would affect you if banks, <br> governments and companies suspected you of <br> being a negative part of society?",
     "text_1": [
       "Currently there are three well-known and frequently-used",
       "databases to which only the credit institutions,",
@@ -182,13 +182,14 @@
     ],
     "text_2": [""],
     "class_1": "",
-    "class_2": "",
+    "class_2": "_fontSize36",
     "class_3": "",
     "class_4": "",
     "class_5": "",
     "class_6": "",
-    "box_primary": "",
+    "box_primary": "_financial_compilance_box_primary",
     "box_secondary": "",
+    "class_container__": "_containerFullWidth",
     "triangleVisible": false
   }
 }

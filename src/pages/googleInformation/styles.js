@@ -92,7 +92,7 @@ const styles = {
   gridSubContainerBox: {
     display: "grid",
     gridTemplateColumns: "100%",
-    gridTemplateRows: "68% 10% 20%",
+    gridTemplateRows: "72% 8% 18%",
     gap: "2%",
     padding: "4em",
   },
@@ -102,6 +102,12 @@ const styles = {
     fontSize: "36px",
     lineHeight: "51px",
     color: "var(--color-title-blue)",
+    overflow: "hidden",
+    WebkitLineClamp: 'last',
+    WebkitBoxOrient: 'vertical',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap', 
+     display: "-webkit-box",
   },
   textNormalSearch: {
     fontStyle: "normal",
@@ -124,7 +130,7 @@ const styles = {
   textSeachIcon: {
     display: "flex",
     alignItems: "center",
-    gap: "3em",
+    gap: "2em",
     color: "var(--color-white-normal)",
     fontStyle: "normal",
     fontWeight: 400,
