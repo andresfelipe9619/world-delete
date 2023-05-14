@@ -1,20 +1,16 @@
 import * as React from "react";
-import { Canvas } from "@react-three/fiber";
-import Planet from "./Planet";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box"; // Reemplaza con la ruta a la textura del planeta
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
-import textureUrl from "../../assets/texture.jpg";
-import barsUrl from "../../assets/bars.png";
-import dashboardUrl from "../../assets/dashboard.png";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import FormTriangle from "./FormTriangle.js";
 import useResponsive from "../../hooks/useResponsive";
 // import Carousel from "../../components/carousel/Carousel";
-
-const ROTATION_SPEED = 0.001; // Ajusta la velocidad de rotación
+import barsUrl from "../../assets/bars.png";
+import dashboardUrl from "../../assets/dashboard.png";
+import worldUrl from "../../assets/world.gif";
 
 export default function HomePage() {
   const { isSmallScreen } = useResponsive();
@@ -43,13 +39,8 @@ export default function HomePage() {
       </Grid>
       <Grid item md={8}>
         <Box style={{ width: "100%", height: 600, pr: 10 }}>
-          <Canvas style={{ position: "relative" }}>
-            <ambientLight />
-            <pointLight position={[10, 10, 10]} />
-            <Planet textureUrl={textureUrl} rotationSpeed={ROTATION_SPEED} />
-          </Canvas>
+          <img src={worldUrl} alt={"world spinnig"} width={"100%"} />
         </Box>
-
         {!isSmallScreen && (
           <Box sx={{ position: "absolute", right: 40, top: 200 }}>
             <CustomBox value={120} label={"happy clients"} />
@@ -128,6 +119,7 @@ function ViewMoreButton() {
     </Button>
   );
 }
+
 function CustomBox({ value, label }) {
   return (
     <Box display={"flex"} flexDirection={"column"}>

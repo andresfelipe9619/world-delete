@@ -1,8 +1,8 @@
 import React from "react";
 import FormTriangle from "../home/FormTriangle";
-import BannerText from "../googleInformation/BannerText";
+import BannerText from "../google-Information/BannerText";
 import { Typography, Button } from "@mui/material";
-import styles from "../googleInformation/styles";
+import styles from "../google-Information/styles";
 
 const bannerStyle = {
   title: "World Delete complies with European data protection regulations ",

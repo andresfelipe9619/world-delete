@@ -30,8 +30,8 @@ const theme = createTheme({
   palette: {
     mode: "dark",
     background: {
-      paper: "#111",
-      default: "#111",
+      paper: "#000",
+      default: "#000",
     },
     primary: {
       main: "#E5453A",
