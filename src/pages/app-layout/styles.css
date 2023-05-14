@@ -117,6 +117,25 @@ div.css-jo4aww-MuiGrid-root ._financial_compilance_box_primary {
   font-size: 36px;
 }
 
+._container_table_erase {
+   display: flex;
+   justify-content: space-between;
+   min-height: 4em;
+   padding: 1.2em;
+}
+
+._container_table_erase > p:first-child {
+   display: flex;
+   justify-items: flex-start;
+   width: 40%;
+}
+
+._container_table_erase > p:last-child {
+   display: flex;
+   justify-items: flex-end;
+    width: 60%;
+}
+
 @media screen and (max-width: 768px) {
   div.MuiGrid-root._box_blogs_forums {
     margin-left: unset;
@@ -157,4 +176,5 @@ div.css-jo4aww-MuiGrid-root ._financial_compilance_box_primary {
   --color-121212: #951919;
   --color-gray-medium: #303134;
   --color-gray-3d4: #3D4043;
+  --color-black-4656: #464656;
 }
