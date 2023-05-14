@@ -21,6 +21,7 @@ import BlogsForums from "./pages/deletingData/BlogsForums";
 import DigitalMedia from "./pages/deletingData/DigitalMedia";
 import VideoPhotography from "./pages/deletingData/VideoPhotography";
 import MentionsComments from "./pages/deletingData/MentionsComments";
+import DeleteRecords from "./pages/finacial_data/DeleteRecords";
 
 export const Routes = {
   "Our company": [
@@ -83,7 +84,7 @@ export const Routes = {
     {
       path: "/delete-records",
       label: "Delete Records",
-      element: <HomePage />,
+      element: <DeleteRecords />,
     },
     {
       path: "/financial-compliance",
