@@ -7,6 +7,13 @@
 /*  }*/
 /*}*/
 
+.background-world {
+  background-image: url("../../assets/world.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .background-triangle {
   background-image: url("../../assets/triangle-bg.png");
   background-position: center;
@@ -18,10 +25,6 @@ body header.header__google_information {
   position: absolute;
   background: transparent;
   z-index: 99;
-}
-
-body ._height_header_ {
-  min-height: 0;
 }
 
 ol {
@@ -107,10 +110,10 @@ div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
   grid-template-columns: 100%;
 }
 
-div.css-jo4aww-MuiGrid-root ._financial_compilance_box_primary {
-   justify-self: flex-start;
-   margin-top: 13%;
-   margin-left: 4em;
+div.css-jo4aww-MuiGrid-root ._financial_compliance_box_primary {
+  justify-self: flex-start;
+  margin-top: 13%;
+  margin-left: 4em;
 }
 
 .css-15p99sx-MuiTypography-root._fontSize36 {
@@ -118,22 +121,22 @@ div.css-jo4aww-MuiGrid-root ._financial_compilance_box_primary {
 }
 
 ._container_table_erase {
-   display: flex;
-   justify-content: space-between;
-   min-height: 4em;
-   padding: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  min-height: 4em;
+  padding: 1.2em;
 }
 
 ._container_table_erase > p:first-child {
-   display: flex;
-   justify-items: flex-start;
-   width: 40%;
+  display: flex;
+  justify-items: flex-start;
+  width: 40%;
 }
 
 ._container_table_erase > p:last-child {
-   display: flex;
-   justify-items: flex-end;
-    width: 60%;
+  display: flex;
+  justify-items: flex-end;
+  width: 60%;
 }
 
 @media screen and (max-width: 768px) {
@@ -175,6 +178,6 @@ div.css-jo4aww-MuiGrid-root ._financial_compilance_box_primary {
   --color-black-background: #060505;
   --color-121212: #951919;
   --color-gray-medium: #303134;
-  --color-gray-3d4: #3D4043;
+  --color-gray-3d4: #3d4043;
   --color-black-4656: #464656;
 }
