@@ -6,7 +6,10 @@ import {
   Typography,
   Box,
 } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import {
+  ExpandMore as ExpandMoreIcon,
+  VideocamOutlined as VideocamIcon, 
+} from "@mui/icons-material";
 
 const styles = {
   root: {
@@ -30,6 +33,18 @@ const styles = {
       padding: 0,
       margin: "0 16px",
     },
+
+    ".container-camera": {
+        position: "relative",
+        width: "30px",
+    }
+  },
+  cameraIcon: {
+    position: "absolute",
+    top: 0,
+    left: "-20px",
+    fontSize: "1.5rem",
+    color: "#fff",
   },
   heading: {
     flexBasis: "40%",
@@ -60,6 +75,11 @@ const CustomAccordion = ({ items }) => {
             expandIcon={<ExpandMoreIcon sx={styles.expandIcon} />}
           >
             <Typography sx={styles.heading}>{item.title}</Typography>
+            <div className="container-camera">
+              {item.showIcon && (
+                <VideocamIcon sx={styles.cameraIcon} />
+              )}
+            </div>
             <Typography sx={styles.description}>{item.description}</Typography>
           </AccordionSummary>
           <AccordionDetails sx={styles.details}>
