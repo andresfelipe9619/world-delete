@@ -7,11 +7,7 @@ import { Typography } from "@mui/material";
 const GoogleInformation = (props) => {
   return (
     <>
-      <BannerText
-        type={1}
-        url="bannerGoogleInformation.png"
-        content={props.json}
-      >
+      <BannerText type={1} url="googleinformation.png" content={props.json}>
         <ol className={`ol_style_container`}>
           <li>
             <Typography sx={styles.textNormal}>

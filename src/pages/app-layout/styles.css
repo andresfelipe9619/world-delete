@@ -7,6 +7,13 @@
 /*  }*/
 /*}*/
 
+.background-world {
+  background-image: url("../../assets/world.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .background-triangle {
   background-image: url("../../assets/triangle-bg.png");
   background-position: center;
@@ -18,10 +25,6 @@ body header.header__google_information {
   position: absolute;
   background: transparent;
   z-index: 99;
-}
-
-body ._height_header_ {
-  min-height: 0;
 }
 
 ol {

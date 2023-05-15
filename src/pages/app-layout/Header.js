@@ -34,7 +34,7 @@ export default function Header(props) {
         <AppBar
           elevation={0}
           position="static"
-          sx={{ background: (theme) => theme.palette.background.paper }}
+          sx={{ background: (theme) => theme.palette.background.paper, px: 5 }}
         >
           <Toolbar>
             <Link
@@ -127,7 +127,6 @@ export default function Header(props) {
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-      <Toolbar id="_height_header_" />
       <MenuDrawer open={openDrawer} onClose={handleCloseDrawer} on />
     </>
   );

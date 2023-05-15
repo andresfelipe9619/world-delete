@@ -18,12 +18,12 @@ const styles = {
       color: "#ffffff",
       boxShadow: "none",
     },
-
-    ".MuiPaper-root.MuiAccordion-root.MuiAccordion-rounded.MuiAccordion-gutters":{
-      "&::before": {
-        display: "none"
-      }
-    },
+    ".MuiPaper-root.MuiAccordion-root.MuiAccordion-rounded.MuiAccordion-gutters":
+      {
+        "&::before": {
+          display: "none",
+        },
+      },
 
     "& .MuiButtonBase-root.MuiAccordionSummary-root": {
       borderBottom: "1px solid #464656",

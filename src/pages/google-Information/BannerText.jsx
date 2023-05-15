@@ -67,17 +67,11 @@ const BannerText = (props) => {
 
 function addClassHeader() {
   const header = document.querySelector("#header_component");
-  const headerHeight = document.querySelector("#_height_header_");
-
   header.classList.add("header__google_information");
-  headerHeight.classList.add("_height_header_");
 }
 function removeClassHeader() {
   const header = document.querySelector("#header_component");
-  const headerHeight = document.querySelector("#_height_header_");
-
   header.classList.remove("header__google_information");
-  headerHeight.classList.remove("_height_header_");
 }
 
 export default BannerText;
