@@ -32,6 +32,7 @@
     "precommit": "lint-staged",
     "prepare": "husky install",
     "postinstall": "husky install",
+    "checkMaster": "git pull origin master",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
