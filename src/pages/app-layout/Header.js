@@ -34,7 +34,11 @@ export default function Header(props) {
         <AppBar
           elevation={0}
           position="static"
-          sx={{ background: (theme) => theme.palette.background.paper, px: 5 }}
+          sx={{
+            background: (theme) => theme.palette.background.paper,
+            px: 5,
+            pt: 5,
+          }}
         >
           <Toolbar>
             <Link
@@ -119,7 +123,6 @@ export default function Header(props) {
                 color="inherit"
                 aria-label="menu"
                 onClick={handleOpenDrawer}
-                sx={{ mr: 2 }}
               >
                 <MenuIcon />
               </IconButton>

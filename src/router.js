@@ -93,7 +93,7 @@ export const Routes = {
         <FinancialCompliance
           type={1}
           json={json_data_pages}
-          url={"FinancialCompliance.png"}
+          url={"financial-compliance.png"}
         />
       ),
     },
