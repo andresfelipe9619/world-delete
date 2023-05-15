@@ -23,9 +23,11 @@ export default function HomePage() {
           </Typography>
         </Box>
         <Box sx={{ width: "35%" }}>
-          <Typography sx={{ my: 6 }}>
-            The Division that focuses on the protection of the online reputation
-            of natural and legal persons.
+          <Typography sx={{ mt: 6 }}>
+            The Division that focuses on the protection of
+          </Typography>
+          <Typography sx={{ mb: 6 }}>
+            the online reputation of natural and legal persons.
           </Typography>
         </Box>
         <Box my={8}>
@@ -42,7 +44,13 @@ export default function HomePage() {
         150
       </Grid>
       {!isSmallScreen && (
-        <Box sx={{ position: "absolute", right: 40, top: 200 }}>
+        <Box
+          sx={{
+            position: "absolute",
+            right: (theme) => theme.spacing(10),
+            top: 200,
+          }}
+        >
           <CustomBox value={120} label={"happy clients"} />
           <CustomBox value={9} label={"years of experience"} />
           <CustomBox value={"1K TB"} label={"of deleted info"} />
@@ -122,10 +130,14 @@ function ViewMoreButton() {
 function CustomBox({ value, label }) {
   return (
     <Box display={"flex"} flexDirection={"column"}>
-      <Typography variant={"h2"} sx={{ mt: 3, mb: 1, fontWeight: "bold" }}>
+      <Typography
+        variant={"h1"}
+        component={"h2"}
+        sx={{ mt: 3, mb: 2, fontWeight: "bold" }}
+      >
         {value}+
       </Typography>
-      <Typography variant={"h4"} sx={{ mb: 1 }}>
+      <Typography variant={"body"} sx={{ mb: 7 }}>
         {label}
       </Typography>
     </Box>

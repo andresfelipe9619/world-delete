@@ -21,9 +21,8 @@ const BannerText = (props) => {
     text_2,
     class_6,
     triangleVisible,
-    class_container__
+    class_container__,
   } = props.content;
-
 
   useEffect(() => {
     addClassHeader();
