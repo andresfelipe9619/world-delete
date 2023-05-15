@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "./pages/app-layout/AppLayout";
 import ErrorPage from "./pages/error/ErrorPage";
 import HomePage from "./pages/home/HomePage";
-import json_data_pages from "./json/dataRoutes.json";
 import AboutUs from "./pages/our-company/AboutUs";
 import LegalNotice from "./pages/legal-page/LegalNotice";
 import CookiesPolicy from "./pages/legal-page/CookiesPolicy";
@@ -14,13 +13,15 @@ import HowItWork from "./pages/clients/HowItWork";
 import JoinToTeams from "./pages/join-to-teams/JoinToTeams";
 import ReputationCrisis from "./pages/clients/ReputationCrisis";
 import ContactUs from "./pages/contact/ContactUs";
-import FinancialCompilance from "./pages/finacial-data/FinancialCompilance";
+import FinancialCompliance from "./pages/finacial-data/FinancialCompliance";
 import GoogleInformation from "./pages/deleting-data/GoogleInformation";
 import SocialNetwork from "./pages/deleting-data/SocialNetwork";
 import BlogsForums from "./pages/deleting-data/BlogsForums";
 import DigitalMedia from "./pages/deleting-data/DigitalMedia";
 import VideoPhotography from "./pages/deleting-data/VideoPhotography";
 import MentionsComments from "./pages/deleting-data/MentionsComments";
+import DeleteRecords from "./pages/finacial-data/DeleteRecords";
+import json_data_pages from "./json/dataRoutes.json";
 
 export const Routes = {
   "Our company": [
@@ -83,16 +84,16 @@ export const Routes = {
     {
       path: "/delete-records",
       label: "Delete Records",
-      element: <HomePage />,
+      element: <DeleteRecords />,
     },
     {
       path: "/financial-compliance",
       label: "Financial Compliance",
       element: (
-        <FinancialCompilance
+        <FinancialCompliance
           type={1}
           json={json_data_pages}
-          url={"FinancialCompilance.png"}
+          url={"FinancialCompliance.png"}
         />
       ),
     },

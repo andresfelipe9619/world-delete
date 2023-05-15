@@ -92,7 +92,7 @@ const styles = {
   gridSubContainerBox: {
     display: "grid",
     gridTemplateColumns: "100%",
-    gridTemplateRows: "68% 10% 20%",
+    gridTemplateRows: "72% 8% 18%",
     gap: "2%",
     padding: "4em",
   },
@@ -102,6 +102,12 @@ const styles = {
     fontSize: "36px",
     lineHeight: "51px",
     color: "var(--color-title-blue)",
+    overflow: "hidden",
+    WebkitLineClamp: "last",
+    WebkitBoxOrient: "vertical",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+    display: "-webkit-box",
   },
   textNormalSearch: {
     fontStyle: "normal",
@@ -124,7 +130,7 @@ const styles = {
   textSeachIcon: {
     display: "flex",
     alignItems: "center",
-    gap: "3em",
+    gap: "2em",
     color: "var(--color-white-normal)",
     fontStyle: "normal",
     fontWeight: 400,
@@ -139,6 +145,38 @@ const styles = {
     "& > svg": {
       fill: "#7F8088",
     },
+  },
+  gridContainerDeleteErase: {
+    display: "grid",
+    width: "100%",
+    height: "auto",
+    minHeight: "32em",
+    backgroundColor: "var(--color_black)",
+    padding: "4em",
+  },
+  titlePageErase: {
+    fontStyle: "normal",
+    fontWeight: 400,
+    fontSize: "36px",
+    color: "var(--color-white-normal)",
+  },
+  textTableErase: {
+    fontStyle: "normal",
+    fontWeight: 400,
+    fontSize: "16px",
+    color: "var(--color-white-normal)",
+  },
+  containerTableErase: {
+    "& > div": {
+      borderTop: "2px solid var(--color-black-4656)",
+      "&:last-of-type": {
+        borderBottom: "2px solid var(--color-black-4656)",
+      },
+    },
+  },
+  containerTitleErase: {
+    marginTop: "2em",
+    marginBottom: "2em",
   },
 };
 export default styles;

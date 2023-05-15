@@ -11,10 +11,10 @@ import styles from "../google-Information/styles";
  *
  * @returns {React.Component}
  */
-const FinancialCompilance = (props) => {
+const FinancialCompliance = (props) => {
   return (
     <>
-      <BannerText url={props.url} content={props.json.FinancialCompilance}>
+      <BannerText url={props.url} content={props.json.FinancialCompliance}>
         <ol className={`ol_style_container`}>
           <li>
             <Typography sx={styles.textNormal}>
@@ -43,4 +43,4 @@ const FinancialCompilance = (props) => {
   );
 };
 
-export default FinancialCompilance;
+export default FinancialCompliance;

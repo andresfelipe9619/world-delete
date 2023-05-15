@@ -7,11 +7,11 @@ import { Typography } from "@mui/material";
 const GoogleInformation = (props) => {
   return (
     <>
-      <BannerText type={1} url="googleinformation.png" content={props.json}>
+      <BannerText type={1} url="googleInformation.png" content={props.json}>
         <ol className={`ol_style_container`}>
           <li>
             <Typography sx={styles.textNormal}>
-              We erase any type of prejuducial information that could
+              We erase any type of prejudicial information that could
             </Typography>
           </li>
           <li>
