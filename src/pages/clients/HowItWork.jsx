@@ -2,7 +2,7 @@ import React from "react";
 import CustomAccordion from "../../components/client/Accordion";
 import TimelineExample from "../../components/client/TimeLine";
 import FormTriangle from "../home/FormTriangle";
-import BannerText from "../googleInformation/BannerText";
+import BannerText from "../google-Information/BannerText";
 import useResponsive from "../../hooks/useResponsive";
 
 // accordion array

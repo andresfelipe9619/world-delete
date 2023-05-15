@@ -1,34 +1,33 @@
 import * as React from "react";
-import { Canvas } from "@react-three/fiber";
-import Planet from "./Planet";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box"; // Reemplaza con la ruta a la textura del planeta
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
-import textureUrl from "../../assets/texture.jpg";
-import barsUrl from "../../assets/bars.png";
-import dashboardUrl from "../../assets/dashboard.png";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import FormTriangle from "./FormTriangle.js";
 import useResponsive from "../../hooks/useResponsive";
 // import Carousel from "../../components/carousel/Carousel";
-
-const ROTATION_SPEED = 0.001; // Ajusta la velocidad de rotación
+import barsUrl from "../../assets/bars.png";
+import dashboardUrl from "../../assets/dashboard.png";
 
 export default function HomePage() {
   const { isSmallScreen } = useResponsive();
   return (
-    <Grid container sx={{ p: 3 }}>
-      <Grid item md={4}>
-        <Typography variant={"h1"} sx={{ mt: 10 }}>
-          <strong>We delete</strong> information <strong>detrimental</strong> to{" "}
-          <strong>your reputation</strong> on the Internet
-        </Typography>
-        <Typography sx={{ my: 6 }}>
-          The Division that focuses on the protection of the online reputation
-          of natural and legal persons.
-        </Typography>
+    <Grid container sx={{ px: 8, mt: -4, mb: 4 }}>
+      <Grid item md={12} className={"background-world"}>
+        <Box sx={{ width: "30%", pt: 10 }}>
+          <Typography variant={"h1"} sx={{ mt: 10 }}>
+            <strong>We delete</strong> information <strong>detrimental</strong>{" "}
+            to <strong>your reputation</strong> on the Internet
+          </Typography>
+        </Box>
+        <Box sx={{ width: "35%" }}>
+          <Typography sx={{ my: 6 }}>
+            The Division that focuses on the protection of the online reputation
+            of natural and legal persons.
+          </Typography>
+        </Box>
         <Box my={8}>
           <Button variant={"contained"}>Contact us</Button>
           <Button sx={{ ml: 4 }}>Completely confidential call</Button>
@@ -40,24 +39,15 @@ export default function HomePage() {
           <PlayCircleOutlineIcon fontSize={"small"} sx={{ mr: 2 }} />
           <Typography paragraph>See how it works</Typography>
         </Box>
+        150
       </Grid>
-      <Grid item md={8}>
-        <Box style={{ width: "100%", height: 600, pr: 10 }}>
-          <Canvas style={{ position: "relative" }}>
-            <ambientLight />
-            <pointLight position={[10, 10, 10]} />
-            <Planet textureUrl={textureUrl} rotationSpeed={ROTATION_SPEED} />
-          </Canvas>
+      {!isSmallScreen && (
+        <Box sx={{ position: "absolute", right: 40, top: 200 }}>
+          <CustomBox value={120} label={"happy clients"} />
+          <CustomBox value={9} label={"years of experience"} />
+          <CustomBox value={"1K TB"} label={"of deleted info"} />
         </Box>
-
-        {!isSmallScreen && (
-          <Box sx={{ position: "absolute", right: 40, top: 200 }}>
-            <CustomBox value={120} label={"happy clients"} />
-            <CustomBox value={9} label={"years of experience"} />
-            <CustomBox value={"1K TB"} label={"of deleted info"} />
-          </Box>
-        )}
-      </Grid>
+      )}
       {/*<Grid item md={12}>*/}
       {/*  <Carousel />*/}
       {/*</Grid>*/}
@@ -128,6 +118,7 @@ function ViewMoreButton() {
     </Button>
   );
 }
+
 function CustomBox({ value, label }) {
   return (
     <Box display={"flex"} flexDirection={"column"}>

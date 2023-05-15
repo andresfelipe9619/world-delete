@@ -1,6 +1,8 @@
 import React from "react";
 import FormTriangle from "../home/FormTriangle";
-import BannerText from "../googleInformation/BannerText";
+import BannerText from "../google-Information/BannerText";
+import { Typography } from "@mui/material";
+import styles from "../google-Information/styles";
 
 const bannerStyle = {
   title: "World Delete complies with European data protection regulations ",
@@ -31,7 +33,37 @@ const Confidentially = () => {
         background: "#060505",
       }}
     >
-      <BannerText content={bannerStyle} url={"confidentially.png"} />
+      <BannerText content={bannerStyle} url={"confidentially.png"}>
+        <ol className={`ol_style_container`}>
+          <li>
+            <Typography
+              className="_style_items_about_second"
+              sx={styles.textNormal}
+            >
+              Specifically with the General Data Protection Regulation (GDPR),
+              one of the EU’s
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              className="_style_items_about_second"
+              sx={styles.textNormal}
+            >
+              most important regulatory innovations of the last twenty years,
+              which was approved
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              className="_style_items_about_second"
+              sx={styles.textNormal}
+            >
+              on 14 April 2016 and has now been transposed into the law of each
+              Member State.
+            </Typography>
+          </li>
+        </ol>
+      </BannerText>
       <FormTriangle />
     </div>
   );
