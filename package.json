@@ -30,6 +30,7 @@
   "scripts": {
     "start": "react-scripts start",
     "precommit": "lint-staged",
+    "prepare": "husky install",
     "postinstall": "husky install",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -57,10 +58,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,json,css,md}": [
-      "npm run format",
-      "npm run lint:fix",
-      "git add"
+    "*.{js,jsx,css}": [
+      "npm run lint"
     ]
   },
   "browserslist": {

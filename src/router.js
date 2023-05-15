@@ -21,6 +21,8 @@ import DigitalMedia from "./pages/deleting-data/DigitalMedia";
 import VideoPhotography from "./pages/deleting-data/VideoPhotography";
 import MentionsComments from "./pages/deleting-data/MentionsComments";
 import DeleteRecords from "./pages/finacial-data/DeleteRecords";
+import InternetCustomer from "./pages/clients/InternetCustomers";
+import Faq from "./pages/clients/FAQ";
 import json_data_pages from "./json/dataRoutes.json";
 
 export const Routes = {
@@ -112,7 +114,7 @@ export const Routes = {
     {
       path: "/faq",
       label: "FAQ",
-      element: <HomePage />,
+      element: <Faq />,
     },
     {
       path: "/how-it-work",
@@ -122,7 +124,7 @@ export const Routes = {
     {
       path: "/internet-customers",
       label: "Internet customers",
-      element: <HomePage />,
+      element: <InternetCustomer />,
     },
   ],
   "Private policy": [
