@@ -13,8 +13,7 @@ import {
 
 const styles = {
   root: {
-    width: "90%",
-    margin: "auto",
+    width: "100%",
     color: "white",
     "& .MuiPaper-root": {
       background: "none",

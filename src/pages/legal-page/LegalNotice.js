@@ -8,7 +8,11 @@ const LegalNotice = () => {
   return (
     <LegalPage
       left={() => (
-        <Box display={"flex"} flexDirection={"column"}>
+        <Box
+          display={"flex"}
+          flexDirection={"column"}
+          className={"layout-content-padding"}
+        >
           <Typography variant={"h2"} sx={{ fontWeight: "bold", mb: 4 }}>
             Privacy policy
           </Typography>
@@ -21,7 +25,11 @@ const LegalNotice = () => {
         </Box>
       )}
       right={() => (
-        <Box display={"flex"} flexDirection={"column"}>
+        <Box
+          display={"flex"}
+          flexDirection={"column"}
+          className={"layout-content-padding"}
+        >
           <Typography variant={"h3"} sx={{ mb: 4 }} gutterBottom>
             Responsible for processing
           </Typography>
@@ -43,9 +51,8 @@ const LegalNotice = () => {
         <Box
           display={"flex"}
           flexDirection={"column"}
+          className={"layout-content-padding"}
           sx={{
-            mx: -6,
-            p: 6,
             bgcolor: (theme) => theme.palette.common.white,
             color: (theme) => theme.palette.common.black,
           }}

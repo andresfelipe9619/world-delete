@@ -8,7 +8,6 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import styles from "../google-Information/styles";
 
 export default function AboutUs(props) {
-  console.log(props);
   return (
     <>
       <BannerText

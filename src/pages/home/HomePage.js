@@ -2,7 +2,7 @@ import * as React from "react";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
-import Box from "@mui/material/Box"; // Reemplaza con la ruta a la textura del planeta
+import Box from "@mui/material/Box";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import FormTriangle from "./FormTriangle.js";
@@ -10,23 +10,29 @@ import useResponsive from "../../hooks/useResponsive";
 // import Carousel from "../../components/carousel/Carousel";
 import barsUrl from "../../assets/bars.png";
 import dashboardUrl from "../../assets/dashboard.png";
+import clsx from "clsx";
 
 export default function HomePage() {
   const { isSmallScreen } = useResponsive();
   return (
-    <Grid container sx={{ px: 8, mt: -4, mb: 4 }}>
-      <Grid item md={12} className={"background-world"}>
+    <Grid container sx={{ mt: -4, mb: 4, py: 0 }}>
+      <Grid
+        item
+        md={12}
+        className={clsx("background-world", "layout-content-padding-x")}
+      >
         <Box sx={{ width: "30%", pt: 10 }}>
           <Typography variant={"h1"} sx={{ mt: 10 }}>
-            <strong>We delete</strong> information <strong>detrimental</strong>{" "}
-            to <strong>your reputation</strong> on the Internet
+            <strong>We delete</strong> information
+            <br /> <strong>detrimental</strong>
+            to <strong>your reputation</strong> on the
+            <br /> Internet
           </Typography>
         </Box>
         <Box sx={{ width: "35%" }}>
-          <Typography sx={{ mt: 6 }}>
+          <Typography sx={{ my: 6 }}>
             The Division that focuses on the protection of
-          </Typography>
-          <Typography sx={{ mb: 6 }}>
+            <br />
             the online reputation of natural and legal persons.
           </Typography>
         </Box>
@@ -38,10 +44,9 @@ export default function HomePage() {
           Start now with us and get solution of your request!
         </Typography>
         <Box display={"flex"} alignContent={"center"}>
-          <PlayCircleOutlineIcon fontSize={"small"} sx={{ mr: 2 }} />
+          <PlayCircleOutlineIcon fontSize={"small"} sx={{ mb: 4, mr: 2 }} />
           <Typography paragraph>See how it works</Typography>
         </Box>
-        150
       </Grid>
       {!isSmallScreen && (
         <Box
@@ -62,47 +67,52 @@ export default function HomePage() {
       <Grid
         item
         container
-        spacing={4}
         md={12}
-        sx={{ bgcolor: "#DDDDEA", color: "#1A1A1C", pb: 6 }}
+        sx={{ bgcolor: "#DDDDEA", color: "#1A1A1C" }}
       >
-        <Grid item xs={12} sx={{ pr: 4 }}>
+        <Grid item xs={12}>
           <img src={dashboardUrl} alt={"dashboard"} width={"100%"} />
         </Grid>
-        <Grid item xs={4}>
-          <Typography color={"inherit"} variant={"h1"} component={"h2"}>
-            Mandatory non-disclosure agreement
-          </Typography>
-        </Grid>
-        <Grid item xs={4}>
-          <Typography color={"inherit"}>
-            World Delete enters into a mandatory non-disclosure agreement with
-            all its potential customers.
-          </Typography>
-        </Grid>
-        <Grid item xs={4} container justifyContent={"flex-end"}>
-          <ViewMoreButton />
+        <Grid item container xs={12} className={"layout-content-padding"}>
+          <Grid item xs={4}>
+            <Typography color={"inherit"} variant={"h1"} component={"h2"}>
+              Mandatory non-disclosure agreement
+            </Typography>
+          </Grid>
+          <Grid item xs={4}>
+            <Typography color={"inherit"}>
+              World Delete enters into a mandatory non-disclosure agreement with
+              all its potential customers.
+            </Typography>
+          </Grid>
+          <Grid item xs={4} container align justifyContent={"flex-end"}>
+            <ViewMoreButton />
+          </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={12} sx={{ position: "relative", mr: -4, ml: -2 }}>
+
+      <Grid item container xs={12} sx={{ position: "relative" }}>
         <img src={barsUrl} alt={"bars"} />
         <Grid
           item
           md={12}
           container
-          sx={{ pl: 4, position: "absolute", top: 100 }}
+          className={"layout-content-padding"}
+          sx={{ position: "absolute", top: (theme) => theme.spacing(2) }}
         >
           <Grid item xs={5}>
             <Typography variant={"h1"} component={"h2"}>
-              World Delete is provided with more than 10 years of experience
+              World Delete is provided with
+              <br /> more than 10 years of experience
             </Typography>
           </Grid>
           <Grid item xs={4}>
             <Typography>
-              World Delete is a technological division of World Intelligence
-              that specialises in deleting content on the Internet that may
-              affect the reputation and credibility of companies, institutions
-              and individuals.
+              World Delete is a technological division of World
+              <br /> Intelligence that specialises in deleting content
+              <br /> on the Internet that may affect the reputation
+              <br /> and credibility of companies, institutions and
+              <br /> individuals.
             </Typography>
           </Grid>
           <Grid item xs={3} container justifyContent={"flex-end"}>
@@ -119,7 +129,7 @@ function ViewMoreButton() {
   return (
     <Button
       variant={"outlined"}
-      sx={{ m: 4 }}
+      sx={{ mx: 4, height: 40 }}
       endIcon={<KeyboardArrowRightIcon />}
     >
       View more

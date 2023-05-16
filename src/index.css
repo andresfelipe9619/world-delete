@@ -1,12 +1,22 @@
 body {
-  margin: 0;
-  font-family: "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell",
+    margin: 0;
+    font-family: "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .App {
-  padding: 0 0 12px;
-  min-height: 100vh;
+    padding: 0 0 12px;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.layout-content-padding {
+    padding: 64px;
+}
+
+.layout-content-padding-x {
+    padding-right: 64px;
+    padding-left: 64px;
 }

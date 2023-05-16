@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 
 const LegalPage = ({ left, right, content, biggerRight = false }) => {
   return (
-    <Grid container sx={{ py: 3, px: 6 }} justifyContent={"space-between"}>
+    <Grid container sx={{ py: 6 }} justifyContent={"space-between"}>
       <Grid item xs={12} md={biggerRight ? 3 : 4}>
         {left()}
       </Grid>

@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { Grid } from "@mui/material";
 import ContactForm from "../../components/form/ContactForm";
+import clsx from "clsx";
 
 const FormTriangle = (props) => {
   const { children, styleContainer, styleHeader } = props;
@@ -16,10 +17,10 @@ const FormTriangle = (props) => {
       item
       md={12}
       container
-      className="background-triangle"
+      className={clsx("layout-content-padding", "background-triangle")}
       sx={{ mr: 0, ml: -2, mt: -1, ...styleContainer }}
     >
-      <Grid item md={8} container direction={"column"} sx={{ pl: 3, pt: 3 }}>
+      <Grid item md={8} container direction={"column"} sx={{ pt: 3 }}>
         {children}
       </Grid>
       <Grid item md={4} sx={{ pr: 2 }}>

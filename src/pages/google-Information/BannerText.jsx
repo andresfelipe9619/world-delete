@@ -43,21 +43,23 @@ const BannerText = (props) => {
               />
               {props.children}
             </Grid>
-            <Grid className={`item_text_long ${box_secondary}`} item xs={12}>
-              <ol className={`ol_style_container item ${class_5}`}>
-                {text_2.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <Typography
-                        dangerouslySetInnerHTML={{ __html: item }}
-                        sx={styles.textNormal}
-                        className={class_6}
-                      />
-                    </li>
-                  );
-                })}
-              </ol>
-            </Grid>
+            {text_2 && (
+              <Grid className={`item_text_long ${box_secondary}`} item xs={12}>
+                <ol className={`ol_style_container item ${class_5}`}>
+                  {text_2.map((item, index) => {
+                    return (
+                      <li key={index}>
+                        <Typography
+                          dangerouslySetInnerHTML={{ __html: item }}
+                          sx={styles.textNormal}
+                          className={class_6}
+                        />
+                      </li>
+                    );
+                  })}
+                </ol>
+              </Grid>
+            )}
           </Grid>
         </Grid>
       </Grid>
