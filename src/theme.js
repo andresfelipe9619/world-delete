@@ -40,6 +40,25 @@ const theme = createTheme({
       main: "#244DDB",
     },
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          textTransform: "none",
+          ...(ownerState.variant === "contained" &&
+            ownerState.color === "primary" && {
+              fontSize: "16px",
+              background:
+                "linear-gradient(90deg, #951919 -3.29%, #FF7272 109.21%)",
+            }),
+          ...(ownerState.variant === "text" &&
+            ownerState.color === "primary" && {
+              fontSize: "12px",
+            }),
+        }),
+      },
+    },
+  },
 });
 
 export default theme;

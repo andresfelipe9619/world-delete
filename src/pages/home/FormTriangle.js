@@ -24,8 +24,8 @@ export default function FormTriangle({ showText = true, title }) {
             <Typography>info@world-delete.com</Typography>
             <Button
               variant={"outlined"}
-              sx={{ width: 180, my: 4 }}
-              endIcon={<KeyboardArrowRightIcon />}
+              sx={{ width: 140, my: 4 }}
+              endIcon={<KeyboardArrowRightIcon fontSize={"large"} />}
             >
               Contact us
             </Button>
