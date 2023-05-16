@@ -42,22 +42,21 @@ const theme = createTheme({
   },
   components: {
     MuiButton: {
-      variants: [
-        {
-          props: { variant: "contained", color: "primary" },
-          style: {
-            fontSize: 16,
-            backgroundColor:
-              "linear-gradient(90deg, #951919 -3.29%, #FF7272 109.21%);",
-          },
-        },
-        {
-          props: { variant: "outlined", color: "primary" },
-          style: {
-            fontSize: 12,
-          },
-        },
-      ],
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          textTransform: "none",
+          ...(ownerState.variant === "contained" &&
+            ownerState.color === "primary" && {
+              fontSize: "16px",
+              background:
+                "linear-gradient(90deg, #951919 -3.29%, #FF7272 109.21%)",
+            }),
+          ...(ownerState.variant === "text" &&
+            ownerState.color === "primary" && {
+              fontSize: "12px",
+            }),
+        }),
+      },
     },
   },
 });
