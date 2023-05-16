@@ -23,9 +23,7 @@ export default function Header(props) {
 
   const handleOpenTranslation = (event) => setAnchorEl(event.currentTarget);
 
-  const handleOpenDrawer = () => setOpenDrawer(true);
-
-  const handleCloseDrawer = () => setOpenDrawer(false);
+  const handleToggleDrawer = () => setOpenDrawer((prev) => !prev);
 
   const handleCloseTranslation = () => setAnchorEl(null);
 
@@ -47,7 +45,7 @@ export default function Header(props) {
             pt: 5,
           }}
         >
-          <Toolbar>
+          <Toolbar sx={{ zIndex: !isSmallScreen ? 1400 : 400 }}>
             <Box width={"20%"} display={"flex"} alignContent={"center"}>
               <Link
                 to="/"
@@ -139,7 +137,7 @@ export default function Header(props) {
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                onClick={handleOpenDrawer}
+                onClick={handleToggleDrawer}
               >
                 <MenuIcon />
               </IconButton>
@@ -147,7 +145,7 @@ export default function Header(props) {
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-      <MenuDrawer open={openDrawer} onClose={handleCloseDrawer} on />
+      <MenuDrawer open={openDrawer} on onClose={handleToggleDrawer} />
     </>
   );
 }

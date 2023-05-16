@@ -8,14 +8,22 @@ const CookiesPolicy = () => {
     <LegalPage
       biggerRight
       left={() => (
-        <Box display={"flex"} flexDirection={"column"}>
+        <Box
+          display={"flex"}
+          flexDirection={"column"}
+          className={"layout-content-padding"}
+        >
           <Typography variant={"h2"} sx={{ fontWeight: "bold", mb: 4 }}>
             Cookies policy
           </Typography>
         </Box>
       )}
       right={() => (
-        <Box display={"flex"} flexDirection={"column"}>
+        <Box
+          display={"flex"}
+          flexDirection={"column"}
+          className={"layout-content-padding"}
+        >
           <Typography variant={"caption"} gutterBottom>
             We gather and use information as indicated in our Legal Notice. One
             of the ways we gather information is through the use of the
@@ -28,9 +36,8 @@ const CookiesPolicy = () => {
         <Box
           display={"flex"}
           flexDirection={"column"}
+          className={"layout-content-padding"}
           sx={{
-            mx: -6,
-            p: 6,
             bgcolor: (theme) => theme.palette.common.white,
             color: (theme) => theme.palette.common.black,
           }}

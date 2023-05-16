@@ -1,6 +1,9 @@
 import React from "react";
 import FormTriangle from "../home/FormTriangle";
 import CustomAccordion from "../../components/client/Accordion";
+import { Typography } from "@mui/material";
+import styles from "../google-Information/styles";
+import Box from "@mui/material/Box";
 
 // accordion array
 const items = [
@@ -119,17 +122,22 @@ const items = [
 
 const Faq = () => {
   return (
-    <div
-      style={{
+    <Box
+      sx={{
         display: "flex",
         flexDirection: "column",
         gap: "30px",
         background: "#060505",
       }}
+      className={"layout-content-padding"}
     >
+      <Typography sx={styles.titlePageErase}>
+        Erasing financial records and debts: <br />
+        how dose it work
+      </Typography>
       <CustomAccordion items={items} />
       <FormTriangle />
-    </div>
+    </Box>
   );
 };
 

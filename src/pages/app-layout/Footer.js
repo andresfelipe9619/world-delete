@@ -15,7 +15,7 @@ export default function Footer() {
         container
         spacing={2}
         justifyContent={"space-between"}
-        sx={{ px: 6 }}
+        className={"layout-content-padding-x"}
       >
         <Grid container item md={4} direction="column" spacing={2}>
           <Typography variant={"h2"} sx={titleStyle}>
@@ -39,14 +39,20 @@ export default function Footer() {
             </Box>
           </Box>
         </Grid>
-        <Grid container item md={4} direction={"column"}>
+        <Grid
+          item
+          md={4}
+          container
+          direction={"column"}
+          justifyContent={"center"}
+        >
           <Typography variant={"h2"} align={"right"} sx={titleStyle}>
             Our Company
           </Typography>
           <Box display={"flex"} sx={{ mb: 5 }} justifyContent={"space-between"}>
-            <span>Join the team</span>
-            <span>Divisions</span>
             <span>About us</span>
+            <span>Divisions</span>
+            <span>Join the team</span>
           </Box>
           <Box display={"flex"} justifyContent={"space-between"}>
             <span>Cookies policy</span>

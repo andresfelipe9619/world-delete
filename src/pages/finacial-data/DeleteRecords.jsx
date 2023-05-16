@@ -37,11 +37,11 @@ const DeleteRecords = () => {
 
   return (
     <>
-      <Grid container>
+      <Grid container sx={{ mt: 4 }}>
         <Grid item xs={12} sx={styles.gridContainerDeleteErase}>
           <Grid item sx={styles.containerTitleErase}>
             <Typography sx={styles.titlePageErase}>
-              Erasinf financial records and debts: <br />
+              Erasing financial records and debts: <br />
               how dose it work
             </Typography>
           </Grid>

@@ -8,14 +8,22 @@ const GDPR = () => {
     <LegalPage
       biggerRight
       left={() => (
-        <Box display={"flex"} flexDirection={"column"}>
-          <Typography variant={"h2"} sx={{ fontWeight: "bold", mb: 4 }}>
+        <Box
+          display={"flex"}
+          flexDirection={"column"}
+          className={"layout-content-padding"}
+        >
+          <Typography variant={"h2"} sx={{ fontWeight: "bold" }}>
             GDPR
           </Typography>
         </Box>
       )}
       right={() => (
-        <Box display={"flex"} flexDirection={"column"}>
+        <Box
+          display={"flex"}
+          flexDirection={"column"}
+          className={"layout-content-padding"}
+        >
           <Typography variant={"caption"} gutterBottom>
             On this website, we respect and monitor the personal data of our
             users.
@@ -30,10 +38,10 @@ const GDPR = () => {
       content={() => (
         <Box
           display={"flex"}
+          className={"layout-content-padding"}
           flexDirection={"column"}
           sx={{
-            mx: -6,
-            p: 6,
+            width: "100%",
             bgcolor: (theme) => theme.palette.common.white,
             color: (theme) => theme.palette.common.black,
           }}

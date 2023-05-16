@@ -3,17 +3,19 @@ import React from "react";
 import { Grid, Typography, Button } from "@mui/material";
 import ContactForm from "../../components/form/ContactForm";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import clsx from "clsx";
+import { useNavigate } from "react-router-dom";
 
 export default function FormTriangle({ showText = true, title }) {
+  const navigate = useNavigate();
   return (
     <Grid
       item
       md={12}
       container
-      className="background-triangle"
-      sx={{ mr: 0, ml: -2, mt: -1 }}
+      className={clsx("layout-content-padding", "background-triangle")}
     >
-      <Grid item md={8} container direction={"column"} sx={{ pl: 3, pt: 3 }}>
+      <Grid item md={8} container direction={"column"} sx={{ pt: 3 }}>
         <Typography variant={"h1"} component={"h2"} sx={{ maxWidth: "40%" }}>
           {title ||
             "Deleting detrimental content de from any platform on the Internet"}
@@ -25,6 +27,7 @@ export default function FormTriangle({ showText = true, title }) {
             <Button
               variant={"outlined"}
               sx={{ width: 140, my: 4 }}
+              onClick={() => navigate("/contact-us")}
               endIcon={<KeyboardArrowRightIcon fontSize={"large"} />}
             >
               Contact us
@@ -32,7 +35,7 @@ export default function FormTriangle({ showText = true, title }) {
           </>
         )}
       </Grid>
-      <Grid item md={4} sx={{ pr: 2 }}>
+      <Grid item md={4}>
         <ContactForm />
       </Grid>
     </Grid>

@@ -19,7 +19,11 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-export default function MenuDrawer({ open = false, onClose }) {
+export default function MenuDrawer({
+  open = false,
+  onClose,
+  showCloseIcon = false,
+}) {
   const navigate = useNavigate();
   const { isSmallScreen } = useResponsive();
 
@@ -31,14 +35,14 @@ export default function MenuDrawer({ open = false, onClose }) {
     [navigate, onClose]
   );
 
-  const close = (
+  const close = showCloseIcon ? (
     <IconButton
       onClick={onClose}
       sx={{ height: 40, position: "absolute", top: 20, right: "2%" }}
     >
       <CloseOutlined />
     </IconButton>
-  );
+  ) : null;
 
   const styles = {
     width: "100%",
@@ -126,7 +130,13 @@ export default function MenuDrawer({ open = false, onClose }) {
   }
 
   return (
-    <Drawer anchor={"top"} open={open} onClose={onClose} full>
+    <Drawer
+      anchor={"top"}
+      open={open}
+      onClose={onClose}
+      full
+      sx={{ zIndex: 90 }}
+    >
       <>
         {close}
         {content}

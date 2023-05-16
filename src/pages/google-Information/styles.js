@@ -1,10 +1,12 @@
 const styles = {
   containerDiv: {
     minHeight: "35vh",
+    maxHeight: 740,
     overflow: "hidden",
     "& img": {
       width: "100%",
       height: "auto",
+      maxHeight: 740,
       objectFit: "cover",
     },
     "& > div": {

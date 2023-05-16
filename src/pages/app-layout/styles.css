@@ -8,160 +8,169 @@
 /*}*/
 
 .background-world {
-  background-image: url("../../assets/world.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("../../assets/world.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .background-triangle {
-  background-image: url("../../assets/triangle-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("../../assets/triangle-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-compliance {
+    max-width: 720px;
+    min-width: 35vh;
+    background-image: url("../../assets/banners/financial-compliance.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body header.header__google_information {
-  position: absolute;
-  background: transparent;
-  z-index: 99;
+    position: absolute;
+    background: transparent;
+    z-index: 99;
 }
 
 ol {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .ol_style_container {
-  padding-inline-start: 0px;
+    padding-inline-start: 0px;
 }
 
 .ol_style_container.item {
-  margin-block-start: 0;
+    margin-block-start: 0;
 }
 
 .ol_style_container.item > li {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 div.MuiGrid-root._box_blogs_forums {
-  margin-left: 4.5em;
+    margin-left: 4.5em;
 }
 
 div.MuiGrid-root._box_blogs_forums > ol > li {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 div.MuiGrid-root._box_blogs_forums > p {
-  margin-bottom: 1.3em;
+    margin-bottom: 1.3em;
 }
 
 div.MuiGrid-root._box_secondary_digital_media {
-  margin-top: 20%;
+    margin-top: 20%;
 }
 
 .MuiTypography-root._title_about_second {
-  font-size: 36px;
-  color: var(--color-title-blue);
+    font-size: 36px;
+    color: var(--color-title-blue);
 }
 
 div.MuiGrid-root._box_secondary_mentions_comments > ol > li:nth-child(2) {
-  margin-top: 2.5em;
-  margin-left: 2.1em;
+    margin-top: 2.5em;
+    margin-left: 2.1em;
 }
 
 .MuiTypography-root._style_items_about_second {
-  color: var(--color_black);
+    color: var(--color_black);
 }
 
 .MuiGrid-container._quit_before_img > div::before {
-  opacity: 0;
+    opacity: 0;
 }
 
 .MuiTypography-root._title_primary_baner_about_ {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 .MuiTypography-root._text_secondary_baner_about_ {
-  font-size: 16px;
-  text-align: right;
+    font-size: 16px;
+    text-align: right;
 }
 
 ._text_span_about_ {
-  width: -webkit-fill-available;
-  display: grid;
+    width: -webkit-fill-available;
+    display: grid;
 }
 
 .button_banner_about {
-  margin-top: 0.7em;
-  width: 107px;
-  height: 37px;
-  padding: 10px 8px 10px 16px;
-  border-radius: 5px;
-  border: var(--color-121212) 1px solid;
+    margin-top: 0.7em;
+    width: 107px;
+    height: 37px;
+    padding: 10px 8px 10px 16px;
+    border-radius: 5px;
+    border: var(--color-121212) 1px solid;
 }
 
 .hover_:hover {
-  background-color: var(--color-gray-3d4);
-  margin: -0.7em -2em 0 -2em;
-  padding: 0.7em 2em 0 2em;
+    background-color: var(--color-gray-3d4);
+    margin: -0.7em -2em 0 -2em;
+    padding: 0.7em 2em 0 2em;
 }
 
 .css-jo4aww-MuiGrid-root ._containerFullWidth {
-  grid-template-columns: 100%;
+    grid-template-columns: 100%;
 }
 
 div.css-jo4aww-MuiGrid-root ._financial_compliance_box_primary {
-  justify-self: flex-start;
-  margin-top: 13%;
-  margin-left: 4em;
+    justify-self: flex-start;
+    margin-top: 13%;
+    margin-left: 4em;
 }
 
 .css-15p99sx-MuiTypography-root._fontSize36 {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 ._container_table_erase {
-  display: flex;
-  justify-content: space-between;
-  min-height: 4em;
-  padding: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    min-height: 4em;
+    padding: 1.2em;
 }
 
 ._container_table_erase > p:first-child {
-  display: flex;
-  justify-items: flex-start;
-  width: 40%;
+    display: flex;
+    justify-items: flex-start;
+    width: 40%;
 }
 
 ._container_table_erase > p:last-child {
-  display: flex;
-  justify-items: flex-end;
-  width: 60%;
+    display: flex;
+    justify-items: flex-end;
+    width: 60%;
 }
 
 @media screen and (max-width: 768px) {
-  div.MuiGrid-root._box_blogs_forums {
-    margin-left: unset;
-  }
+    div.MuiGrid-root._box_blogs_forums {
+        margin-left: unset;
+    }
 
-  div.MuiGrid-root._box_blogs_forums > p,
-  div.MuiGrid-root._box_blogs_forums > ol > li {
-    margin-bottom: unset;
-  }
+    div.MuiGrid-root._box_blogs_forums > p,
+    div.MuiGrid-root._box_blogs_forums > ol > li {
+        margin-bottom: unset;
+    }
 
-  div.MuiGrid-root._box_secondary_digital_media,
-  div.MuiGrid-root._box_blogs_forums > ol > li > p {
-    color: var(--color-gray);
-  }
+    div.MuiGrid-root._box_secondary_digital_media,
+    div.MuiGrid-root._box_blogs_forums > ol > li > p {
+        color: var(--color-gray);
+    }
 
-  div.MuiGrid-root._box_blogs_forums > ol > li:last-child,
-  div.MuiGrid-root._box_blogs_forums > ol > li:first-child {
-    display: none;
-  }
+    div.MuiGrid-root._box_blogs_forums > ol > li:last-child,
+    div.MuiGrid-root._box_blogs_forums > ol > li:first-child {
+        display: none;
+    }
 
-  .MuiTypography-root._title_primary_baner_about_ {
-    font-size: 24px;
-  }
+    .MuiTypography-root._title_primary_baner_about_ {
+        font-size: 24px;
+    }
 }
 
 /*
@@ -169,15 +178,15 @@ div.css-jo4aww-MuiGrid-root ._financial_compliance_box_primary {
 */
 
 :root {
-  --color-gray: #d0cfd7;
-  --color-gray-light: #f1f1f4;
-  --color-white-normal: #ffffff;
-  --color-title-blue: #444858;
-  --color_black: #000000;
-  --color-black-semit-lite: #1a1a1f;
-  --color-black-background: #060505;
-  --color-121212: #951919;
-  --color-gray-medium: #303134;
-  --color-gray-3d4: #3d4043;
-  --color-black-4656: #464656;
+    --color-gray: #d0cfd7;
+    --color-gray-light: #f1f1f4;
+    --color-white-normal: #ffffff;
+    --color-title-blue: #444858;
+    --color_black: #000000;
+    --color-black-semit-lite: #1a1a1f;
+    --color-black-background: #060505;
+    --color-121212: #951919;
+    --color-gray-medium: #303134;
+    --color-gray-3d4: #3d4043;
+    --color-black-4656: #464656;
 }

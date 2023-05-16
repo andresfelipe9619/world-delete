@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Checkbox, TextField } from "@mui/material";
+import { Button, Checkbox, TextField, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import { useFormik } from "formik";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -70,8 +70,13 @@ const ContactForm = () => {
         onBlur={formik.handleBlur}
       />
       <FormControlLabel
+        sx={{ my: 2 }}
         control={<Checkbox defaultChecked />}
-        label="I have read and accept the Privacy policy"
+        label={
+          <Typography variant={"caption"}>
+            I have read and accept the Privacy policy
+          </Typography>
+        }
       />
       <Button
         onClick={formik.handleSubmit}
@@ -84,7 +89,14 @@ const ContactForm = () => {
   );
 };
 
-const CustomTextField = ({ name, label, value, onChange, onBlur }) => {
+const CustomTextField = ({
+  name,
+  label,
+  value,
+  onChange,
+  onBlur,
+  helperText,
+}) => {
   return (
     <TextField
       fullWidth
@@ -93,6 +105,7 @@ const CustomTextField = ({ name, label, value, onChange, onBlur }) => {
       name={name}
       label={label}
       value={value}
+      helperText={helperText || ""}
       onChange={onChange}
       onBlur={onBlur}
     />
