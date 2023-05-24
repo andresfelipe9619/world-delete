@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Carousel from "react-material-ui-carousel";
-
 import {
   Card,
   CardContent,
@@ -8,36 +7,41 @@ import {
   Typography,
   Grid,
   Button,
+  Stepper,
+  Step,
+  StepLabel,
 } from "@mui/material";
+import Box from "@mui/material/Box";
 
-const DefaultSettingsT = {
-  autoPlay: true,
-  animation: "fade",
-  indicators: true,
+// const images_content = require.context("../../assets/banners", true);
+
+const DefaultSettings = {
+  autoPlay: false,
+  animation: "slide",
+  indicators: false,
   duration: 500,
-  navButtonsAlwaysVisible: false,
+  navButtonsAlwaysVisible: true,
   navButtonsAlwaysInvisible: false,
   cycleNavigation: true,
-  fullHeightHover: true,
+  fullHeightHover: false,
   swipe: true,
 };
 
-const Example = () => {
-  const [settings] = useState(DefaultSettingsT);
+const CustomCarousel = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleCarouselChange = (index) => {
+    setActiveIndex(index);
+  };
 
   return (
-    <div style={{ marginTop: "50px", color: "#494949" }}>
+    <Box sx={{ my: 6 }}>
       <Carousel
-        className="Example"
-        {...settings}
-        // next={(now: any, previous:any) => console.log(`Next User Callback: Now displaying child ${now}. Previously displayed child ${previous}`)}
-        // prev={(now, previous) => console.log(`Prev User Callback: Now displaying child ${now}. Previously displayed child ${previous}`)}
-        // onChange={(now, previous) => console.log(`OnChange User Callback: Now displaying child ${now}. Previously displayed child ${previous}`)}
-
-        // navButtonsProps={{style: {backgroundColor: 'cornflowerblue', borderRadius: 0}}}
-        // navButtonsWrapperProps={{style: {bottom: '0', top: 'unset', }}}
-        // indicatorContainerProps={{style: {margin: "20px"}}}
-        // NextIcon='next'
+        index={activeIndex}
+        onChange={handleCarouselChange}
+        NextIcon={<RightButton />}
+        PrevIcon={<LeftButton />}
+        {...DefaultSettings}
       >
         {items.map((item, index) => {
           return (
@@ -49,7 +53,15 @@ const Example = () => {
           );
         })}
       </Carousel>
-    </div>
+
+      <Stepper activeStep={activeIndex}>
+        {items.map((item, i) => (
+          <Step key={i} onClick={() => handleCarouselChange(i)}>
+            <StepLabel>{item.name}</StepLabel>
+          </Step>
+        ))}
+      </Stepper>
+    </Box>
   );
 };
 
@@ -79,7 +91,7 @@ const Banner = (props) => {
     const item = props.item.Items[i];
 
     const media = (
-      <Grid item xs={4} key={item.Name}>
+      <Grid item xs={4} key={item.Name} sx={{ height: "100%" }}>
         <CardMedia className="Media" image={item.Image} title={item.Name}>
           <Typography className="MediaCaption">{item.Name}</Typography>
         </CardMedia>
@@ -154,4 +166,50 @@ const items = [
   },
 ];
 
-export default Example;
+const LeftButton = () => (
+  <svg
+    width="40"
+    height="36"
+    viewBox="0 0 40 36"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M22 22L18 18L22 14"
+      stroke="#FF6262"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <rect
+      x="39.5"
+      y="35.5"
+      width="39"
+      height="35"
+      rx="17.5"
+      transform="rotate(180 39.5 35.5)"
+      stroke="#FF6262"
+    />
+  </svg>
+);
+
+const RightButton = () => (
+  <svg
+    width="40"
+    height="36"
+    viewBox="0 0 40 36"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M18 14L22 18L18 22"
+      stroke="#FF6262"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <rect x="0.5" y="0.5" width="39" height="35" rx="17.5" stroke="#FF6262" />
+  </svg>
+);
+
+export default CustomCarousel;

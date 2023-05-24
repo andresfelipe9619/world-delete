@@ -7,7 +7,7 @@ import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import FormTriangle from "./FormTriangle.js";
 import useResponsive from "../../hooks/useResponsive";
-// import Carousel from "../../components/carousel/Carousel";
+import Carousel from "../../components/carousel/Carousel";
 import barsUrl from "../../assets/bars.png";
 import dashboardUrl from "../../assets/dashboard.png";
 import clsx from "clsx";
@@ -61,9 +61,9 @@ export default function HomePage() {
           <CustomBox value={"1K TB"} label={"of deleted info"} />
         </Box>
       )}
-      {/*<Grid item md={12}>*/}
-      {/*  <Carousel />*/}
-      {/*</Grid>*/}
+      <Grid item md={12}>
+        <Carousel />
+      </Grid>
       <Grid
         item
         container

@@ -74,7 +74,7 @@ const bannerStyle = {
     "services operation of the same should be simple and ",
     "pragmatic.",
   ],
-  text_2: [],
+  rightSide: [],
   class_1: "",
   class_2: "",
   class_3: "",

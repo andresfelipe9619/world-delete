@@ -98,12 +98,12 @@ const SearchSliderLink = () => {
             }}
           >
             <Grid item xs={12} sx={styles.BoxNormalSearch}>
-              <Typography sx={styles.textSeachIcon}>
+              <Typography sx={styles.textSearchIcon}>
                 <SearchIcon />
                 it
               </Typography>
               <Typography
-                sx={styles.textSeachIcon}
+                sx={styles.textSearchIcon}
                 className="hover_"
                 item-mouseenter="0"
                 onMouseEnter={handleMouseEnter}
@@ -112,7 +112,7 @@ const SearchSliderLink = () => {
                 it judicial
               </Typography>
               <Typography
-                sx={styles.textSeachIcon}
+                sx={styles.textSearchIcon}
                 className="hover_"
                 item-mouseenter="1"
                 onMouseEnter={handleMouseEnter}
@@ -121,7 +121,7 @@ const SearchSliderLink = () => {
                 it security
               </Typography>
               <Typography
-                sx={styles.textSeachIcon}
+                sx={styles.textSearchIcon}
                 item-mouseenter="2"
                 className="hover_"
                 onMouseEnter={handleMouseEnter}
@@ -130,7 +130,7 @@ const SearchSliderLink = () => {
                 it criminal
               </Typography>
               <Typography
-                sx={styles.textSeachIcon}
+                sx={styles.textSearchIcon}
                 className="hover_"
                 item-mouseenter="3"
                 onMouseEnter={handleMouseEnter}

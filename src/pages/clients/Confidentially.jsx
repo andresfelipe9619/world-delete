@@ -11,7 +11,7 @@ const bannerStyle = {
     "most important regulatory innovations of the last twenty years, which was approved",
     "on 14 April 2016 and has now been transposed into the law of each Member State.",
   ],
-  text_2: [],
+  rightSide: [],
   class_1: "",
   class_2: "",
   class_3: "",

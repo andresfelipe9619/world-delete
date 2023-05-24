@@ -8,23 +8,13 @@ const GoogleInformation = (props) => {
   return (
     <>
       <BannerText type={1} url="googleInformation.png" content={props.json}>
-        <ol className={`ol_style_container`}>
-          <li>
-            <Typography sx={styles.textNormal}>
-              We erase any type of prejudicial information that could
-            </Typography>
-          </li>
-          <li>
-            <Typography sx={styles.textNormal}>
-              appear in the search engine and that affect your
-            </Typography>
-          </li>
-          <li>
-            <Typography sx={styles.textNormal}>
-              reputation. ¡100% guarantee!
-            </Typography>
-          </li>
-        </ol>
+        <Typography component="div" sx={styles.textNormal}>
+          We erase any type of prejudicial information that could
+          <br />
+          appear in the search engine and that affect your
+          <br />
+          reputation. ¡100% guarantee!
+        </Typography>
       </BannerText>
     </>
   );

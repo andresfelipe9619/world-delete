@@ -30,7 +30,7 @@
     background-size: cover;
 }
 
-body header.header__google_information {
+body header.header__banner {
     position: absolute;
     background: transparent;
     z-index: 99;

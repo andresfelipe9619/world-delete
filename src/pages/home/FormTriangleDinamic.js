@@ -33,13 +33,13 @@ const FormTriangle = (props) => {
 function addClassHeader() {
   const header = document.querySelector("#header_component");
 
-  header.classList.add("header__google_information");
+  header.classList.add("header__banner");
 }
 
 function removeClassHeader() {
   const header = document.querySelector("#header_component");
 
-  header.classList.remove("header__google_information");
+  header.classList.remove("header__banner");
 }
 
 export default FormTriangle;

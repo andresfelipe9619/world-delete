@@ -23,7 +23,7 @@ import MentionsComments from "./pages/deleting-data/MentionsComments";
 import DeleteRecords from "./pages/finacial-data/DeleteRecords";
 import InternetCustomer from "./pages/clients/InternetCustomers";
 import Faq from "./pages/clients/FAQ";
-import json_data_pages from "./json/dataRoutes.json";
+import json_data_pages from "./json/dataRoutes.js";
 
 export const Routes = {
   "Our company": [

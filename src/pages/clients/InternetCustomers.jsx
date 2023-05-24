@@ -8,7 +8,7 @@ const bannerStyle = {
     "area. Every time a link is deleted or modified you will receive an automatic notification on ",
     "your panel and in your email to ensure that you are informed at all times, 24/7. ",
   ],
-  text_2: [],
+  rightSide: [],
   class_1: "",
   class_2: "",
   class_3: "",

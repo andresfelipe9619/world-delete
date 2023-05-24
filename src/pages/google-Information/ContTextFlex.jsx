@@ -74,9 +74,9 @@ const ContTextFlex = ({ content, backgroundColor }) => {
             item
             xs={12}
             sx={styled.containerSubDiv2}
-            style={{ columns: content.text_secundary.length }}
+            style={{ columns: content.text_secondary.length }}
           >
-            {Children.map(content.text_secundary, (item, index) => {
+            {Children.map(content.text_secondary, (item, index) => {
               return (
                 <Typography
                   dangerouslySetInnerHTML={{ __html: item }}
